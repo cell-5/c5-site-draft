@@ -1,7 +1,7 @@
 <section class="home view-wrapper bg-gradient-1 white">
-    <div class="home mw9 center relative z-1 ph4">
-        <div class="row w-100 pv5">
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <div class="home mw9 center relative z-1 pt5 ph4">
+        <div class="row w-100">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 relative">
                 <div class="banner">
                     {{ .heading | markdownify }}
                 </div>
@@ -9,10 +9,12 @@
                     {{ .text | markdownify }}
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 relative">
                 <img src="{{ .bannerImg }}" />
             </div>
         </div>
     </div>
-    {{ partial "waves" (dict "svg" "dark-bg-waves" "viewbox" "0 0 1920 395" "class" "absolute bottom-0") }}
+    <div class="view-wrapper">
+        {{ partial "waves" (dict "svg" "dark-bg-waves" "viewbox" "0 0 1920 395") }}
+    </div>
 </section>

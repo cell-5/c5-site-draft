@@ -6,6 +6,8 @@
 .lh-header { line-height: 3rem };
 .lh-blog { line-height: 2.5rem; }
 
+.lh-headline { line-height: 5.625rem };
+
 @media (--breakpoint-not-small) {
   .lh-solid-ns { line-height: 1rem; }
   .lh-title-ns { line-height: 1.25rem; }

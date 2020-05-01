@@ -4,7 +4,9 @@
 
 <section class="view-wrapper bg-black-2 tc white">
     {{ partial "blog-table" .Params.OurWork }}
-    {{ partial "waves" (dict "svg" "waves-1" "viewbox" "0 0 1920 388") }}
+    <div class="view-wrapper">
+        {{ partial "waves" (dict "svg" "waves-1" "viewbox" "0 0 1920 388") }}
+    </div>
 </section>
 <section class="view-wrapper tc bg-white">
     <div class="mw9 center h-100 relative ph4">
@@ -18,14 +20,18 @@
             </div>
         </div>
     </div>
-    {{ partial "waves" (dict "svg" "waves-2" "viewbox" "0 0 1920 395") }}
+    <div class="view-wrapper">
+        {{ partial "waves" (dict "svg" "waves-2" "viewbox" "0 0 1920 395") }}
+    </div>
 </section>
 <section class="view-wrapper bg-black-2 tc white">
     {{ partial "title" .Params.TechWeKnow }}
     <div class="f3 tc lh-header">
         {{ partial "wide-text" .Params.TechWeKnow }}
     </div>
-    {{ partial "waves" (dict "svg" "waves-3" "viewbox" "0 0 1920 397") }}
+    <div class="view-wrapper">
+        {{ partial "waves" (dict "svg" "waves-3" "viewbox" "0 0 1920 397") }}
+    </div>
 </section>
 <section class="view-wrapper tc bg-white">
     <div class="mw9 center h-100 relative ph4">

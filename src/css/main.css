@@ -61,6 +61,18 @@ img {
     max-width: 100%;
 }
 
+@media screen and (min-width: 50em) {
+  html {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (min-width: 75em) {
+  html {
+    font-size: 1em;
+  }
+}
+
 /*-- These are custom CSS for Shapes -- */
 .v-line{
     border-left: 2px solid #D2D2D2;
@@ -184,6 +196,48 @@ img {
     font-weight: bold;
 }
 
+
 .clients img {
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
 }
+
+/*People Page*/
+.people-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.people-gallery img {
+    margin: 10px;
+    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
+    max-width: 150px;
+    height: 150px;
+  }
+
+@media only screen and (min-width: 48em) {
+    .home img {
+        display: none;
+    }  
+}
+
+@media only screen and (min-width: 62em) {
+    .home img {
+        display: block;
+        position: absolute;
+        width: 100%;
+    }
+
+    .people img {
+        position: absolute;
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 75em) {
+   
+  
+}
+
+

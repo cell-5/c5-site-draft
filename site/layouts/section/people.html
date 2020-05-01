@@ -2,22 +2,37 @@
 
 <section class="view-wrapper bg-black-2">
     <div class="mw9 center relative z-1 ph4">
-        <div class="row w-100 pv5">
-            <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
-                <div class="white f-subheadline-ns">
+        <div class="people row w-100 pv5">
+            <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 relative">
+                <div class="white f-subheadline-ns fw9 lh-headline">
                     {{ .Params.title }}
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 relative">
                 <img src="{{ .Params.imageUrl }}" class="w-80" />
             </div>
         </div>
     </div>
-    {{ partial "waves" (dict "svg" "waves-1" "viewbox" "0 0 1920 388" "class" "absolute bottom-0") }}
+    <div class="view-wrapper">
+        {{ partial "waves" (dict "svg" "waves-1" "viewbox" "0 0 1920 388") }}
+    </div>
+</section>
+<section class="view-wrapper bg-white">
+    <div class="pv4">
+        {{ partial "people-widget" (dict "people" .Params.people )}}
+    </div>
 </section>
 
-
-
 {{ partial "svg-waves" . }}
+<script>
+    function ShowPeopleData(element) {
+        let jsonData = JSON.parse(element);
+
+        document.getElementById("name-data").innerHTML = jsonData.name;
+        document.getElementById("title-data").innerHTML = jsonData.title;
+        document.getElementById("bio-data").innerHTML = jsonData.bio;
+    }
+
+</script>
 
 {{ end }}
