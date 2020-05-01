@@ -62,8 +62,68 @@ TechWeKnow:
   text: >
     We have shipped products with these technologies in last 18 months
   lists: 
-    - name: ""
-      description: ""
+    - group: "Custom API"
+      tech:
+        - imageUrl: img/tools/java.svg
+        - imageUrl: img/tools/laravel.svg
+        - imageUrl: img/tools/springboot.svg
+        - imageUrl: img/tools/golang.svg
+        - imageUrl: img/tools/nodejs.svg
+        - imageUrl: img/tools/awslambda.svg
+        - imageUrl: img/tools/php.svg
+        - imageUrl: img/tools/python.svg
+    - group: "Persistence & Middleware"
+      tech:
+        - imageUrl: img/tools/postgresql.svg
+        - imageUrl: img/tools/redis.svg
+        - imageUrl: img/tools/elasticsearch.svg
+        - imageUrl: img/tools/mongodb.svg
+        - imageUrl: img/tools/mysql.svg
+        - imageUrl: img/tools/amazon aurora.svg
+        - imageUrl: img/tools/mariadb.svg
+    - group: "Web & Mobile"
+      tech:
+        - imageUrl: img/tools/d3.svg
+        - imageUrl: img/tools/angularjs.svg
+        - imageUrl: img/tools/elm.svg
+        - imageUrl: img/tools/expressjs.svg
+        - imageUrl: img/tools/VueJs.svg
+        - imageUrl: img/tools/Flutter.svg
+        - imageUrl: img/tools/ReactJs.svg
+        - imageUrl: img/tools/Ionic.svg
+    - group: "CRM, CMS & Ecommerce"
+      tech:
+        - imageUrl: img/tools/craftcms.svg
+        - imageUrl: img/tools/yiiframework.svg
+        - imageUrl: img/tools/amazon.svg
+        - imageUrl: img/tools/woocommerce.svg
+        - imageUrl: img/tools/shopify.svg
+        - imageUrl: img/tools/wordpress.svg
+        - imageUrl: img/tools/django.svg
+        - imageUrl: img/tools/joomla.svg
+    - group: "Hosting & Cloud Infrastructure"
+      tech:
+        - imageUrl: img/tools/terraform.svg
+        - imageUrl: img/tools/digitalocean.svg
+        - imageUrl: img/tools/envoyer_1.svg
+        - imageUrl: img/tools/netlify.svg
+        - imageUrl: img/tools/googlecloud-gcp.svg
+        - imageUrl: img/tools/aws.svg
+        - imageUrl: img/tools/forge.svg
+        - imageUrl: img/tools/serverless.svg
+        - imageUrl: img/tools/docker.svg
+        - imageUrl: img/tools/kubernetes.svg
+    - group: "SaaS Integration"
+      tech:
+        - imageUrl: img/tools/auth0.svg
+        - imageUrl: img/tools/paypal.svg
+        - imageUrl: img/tools/stripe1.svg
+        - imageUrl: img/tools/googleanalytics.svg
+        - imageUrl: img/tools/googlemaps.svg
+        - imageUrl: img/tools/starling.svg
+        - imageUrl: img/tools/mailchip.svg
+        - imageUrl: img/tools/Mailgun.svg
+        - imageUrl: img/tools/segment.svg
 
 qualifications:
   heading: Are we a fit for you?

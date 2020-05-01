@@ -12,10 +12,10 @@
     <div class="mw9 center h-100 relative ph4">
         <div class="absolute absolute--center v-line"></div>
         <div class="row w-100">
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ph4">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                 {{ partial "blog-media" .Params.WhoWeAre}}
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ph4">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                 {{ partial "blog-media" .Params.HowWeWork}}
             </div>
         </div>
@@ -26,6 +26,9 @@
 </section>
 <section class="view-wrapper bg-black-2 tc white">
     {{ partial "title" .Params.TechWeKnow }}
+    <div class="mt4">
+        {{ partial "tech-section" .Params.TechWeKnow }}
+    </div>
     <div class="f3 tc lh-header">
         {{ partial "wide-text" .Params.TechWeKnow }}
     </div>
@@ -35,15 +38,18 @@
 </section>
 <section class="view-wrapper tc bg-white">
     <div class="mw9 center h-100 relative ph4">
-        <div class="absolute absolute--center v-line"></div>
         <div class="row w-100">
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ph4">
-                {{ partial "title" .Params.qualifications }}
-                {{ partial "checklist" .Params.qualifications }}
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="ph4">
+                    {{ partial "title" .Params.qualifications }}
+                    {{ partial "checklist" .Params.qualifications }}
+                </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ph4">
-                {{ partial "title" .Params.feedbacks }}
-                {{ partial "carousel" .Params.feedbacks }}
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="ph4">
+                    {{ partial "title" .Params.feedbacks }}
+                    {{ partial "carousel" .Params.feedbacks }}
+                </div>
             </div>
         </div>
         <div class="white mt4">

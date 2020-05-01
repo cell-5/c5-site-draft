@@ -1,0 +1,22 @@
+<div class="mw9 center h-100 relative ph5 tl">
+    {{ range $index, $element := .lists }}
+    {{ if modBool $index 3 }}
+    <div class="row w-100">
+        {{ end }}
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="pa3 h-100">
+                <div class="card pa4">
+                    <span class="black underline f8 b">{{ .group }}</span>
+                    <div class="home-techs-gallery">
+                        {{ range $index, $element := .tech }}
+                        <img src="{{ .imageUrl }}" />
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{ if modBool (add $index 1) 3 }}
+    </div>
+    {{ end }}
+    {{ end }}
+</div>
