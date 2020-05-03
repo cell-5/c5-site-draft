@@ -1,16 +1,16 @@
-<div class="mw8 center">
-    <div class="f5 fw9 lh-header mb3">{{ .heading }}</div>
+<div class="mw8 center f3">
+    <div class="fw9 lh-header mb3">{{ .heading }}</div>
     {{ range $index, $element := .content }}
     {{ if modBool $index 2 }}
-    <div class="container-table {{ if modBool $index 4 }}blog-1{{else}}blog-2{{end}} fw9 lh-blog f6">
-        <div class="col">
+    <div class="flex-m flex-row-m flex-wrap-m {{ if modBool $index 4 }}blog-1{{else}}blog-2{{end}} fw9 lh-blog f6">
+        <div class="bt br-m b--grey-1 w-50-m pa3">
             <h3>{{ .heading }}</h3>
-            <p>{{ .text }}</p>
+            <p class="f3">{{ .text }}</p>
         </div>
         {{ else }}
-        <div class="col">
+        <div class="bt b--grey-1 w-50-m pa3">
             <h3>{{ .heading }}</h3>
-            <p>{{ .text }}</p>
+            <p class="f3">{{ .text }}</p>
         </div>
     </div>
     {{ end }}

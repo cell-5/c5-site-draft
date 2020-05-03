@@ -1,9 +1,9 @@
 <div class="mw9 center h-100 relative ph5 tl">
     {{ range $index, $element := .lists }}
     {{ if modBool $index 3 }}
-    <div class="row w-100">
+    <div class="flex-m flex-row-m flex-wrap-m">
         {{ end }}
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <div class="w-third-m">
             <div class="pa3 h-100">
                 <div class="card pa4">
                     <span class="black underline f8 b">{{ .group }}</span>

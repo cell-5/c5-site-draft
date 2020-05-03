@@ -1,0 +1,19 @@
+<div class="mw9 cener ph4">
+    <div class="flex-m flex-row-m flex-wrap-m">
+        <div class="w-50-m">
+            <div class="people-gallery">
+                {{ range $index, $element := .people }}
+                <img src="{{ .imageUrl }}" />
+                {{ end }}
+
+            </div>
+        </div>
+        <div class="w-50-m">
+            <div id="people-data" class="tl">
+                <h1 id="name-data" class="f-subheadline-ns"></h1>
+                <h2 id="title-data" class="f1"></h2>
+                <p id="bio-data" class="f3 pv3"></p>
+            </div>
+        </div>
+    </div>
+</div>

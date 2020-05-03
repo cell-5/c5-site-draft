@@ -1,6 +1,6 @@
 <div class="mw9 cener ph4">
-    <div class="row w-100 pt5">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <div class="flex-m flex-row-m flex-wrap-m w-100 pt5">
+        <div class="w-50-m">
             <div class="people-gallery">
                 {{ range $index, $element := .people }}
                 <div id="{{ .name }}" onclick='ShowPeopleData("{{ $element | jsonify }}")'>
@@ -10,7 +10,7 @@
 
             </div>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <div class="w-50-m">
             {{ range $index, $element := .people }}
             {{ if eq $index 0}}
             <div id="people-data" class="tl fs-normal lh-headline">
@@ -20,7 +20,6 @@
             </div>
             {{ end }}
             {{ end }}
-
         </div>
     </div>
 </div>

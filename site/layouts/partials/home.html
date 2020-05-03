@@ -1,16 +1,13 @@
 <section class="home view-wrapper bg-gradient-1 white">
-    <div class="home mw9 center relative z-1 pt5 ph4">
-        <div class="row w-100">
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 relative">
-                <div class="banner">
-                    {{ .heading | markdownify }}
-                </div>
-                <div class="text">
-                    {{ .text | markdownify }}
-                </div>
+    <div class="mw9 center relative z-1 pt5 ph4">
+        <div class="flex-m flex-row-m flex-wrap-m">
+            <div class="flex-none w-50-m">
+                <h1> {{ .header }}</h1>
+                <h2> {{ .subHeader }}</h2>
+                {{ .text | markdownify }}
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 relative">
-                <img src="{{ .bannerImg }}" />
+            <div class="flex-none w-50-m">
+                <img src="{{ .bannerImg }}" class="dn-ns" />
             </div>
         </div>
     </div>
