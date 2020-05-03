@@ -24,7 +24,7 @@
 
 /*Custom CsS*/
 @import "./imports/carousel";
-@import "./imports/custom_nav";
+@import "./imports/nav";
 
 * {
     margin: 0;

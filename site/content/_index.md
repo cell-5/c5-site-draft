@@ -1,8 +1,11 @@
 ---
 page: home
-title: Cell 5
-header: start today
-subHeader:  scale tomorrow
+title: CELL 5
+heading: '
+# start today
+
+
+## scale tomorrow'
 image: img/cell5/cell-5-logo-black.svg
 bannerImg: img/banner-2.png
 moreLink: Get In Touch
