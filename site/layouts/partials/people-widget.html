@@ -3,20 +3,20 @@
         <div class="w-50-m">
             <div class="flex flex-wrap flex-row self-start gallery">
                 {{ range $index, $element := .people }}
-                <div id="{{ .name }}" onclick='ShowPeopleData("{{ $element | jsonify }}")'>
+                <div id="{{ .name }}" onclick='ShowPeopleData("{{ $element | jsonify }}")' class="raise pointer">
                     <img src="{{ .imageUrl }}" />
                 </div>
                 {{ end }}
 
             </div>
         </div>
-        <div class="w-50-m">
+        <div class="w-50-m ph4-m">
             {{ range $index, $element := .people }}
             {{ if eq $index 0}}
-            <div id="people-data" class="tl fs-normal">
-                <h1 id="name-data" class="f-5 fw9 lh-solid">{{ .name }}</h1>
-                <h3 id="title-data" class="f2 b">{{ .title }}</h3>
-                <p id="bio-data" class="f3 b pv3">{{ .bio }}</p>
+            <div id="people-data" class="tl">
+                <h1 id="name-data" class="f-5-m fw9 lh-solid">{{ .name }}</h1>
+                <h3 id="title-data" class="f2-m b">{{ .title }}</h3>
+                <p id="bio-data" class="f3-m b pv3">{{ .bio }}</p>
             </div>
             {{ end }}
             {{ end }}
