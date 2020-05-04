@@ -1,29 +1,24 @@
-.lh-solid { line-height: 1rem; }
-.lh-title { line-height: 1.25rem; }
-.lh-copy  { line-height: 1.5rem; }
+.lh-solid { line-height: 1; }
+.lh-title { line-height: 1.25; }
+.lh-copy  { line-height: 1.5; }
 
-/*custom*/
-.lh-header { line-height: 3rem };
-.lh-blog { line-height: 2.5rem; }
-
-.lh-headline { line-height: 5.625rem };
 
 @media (--breakpoint-not-small) {
-  .lh-solid-ns { line-height: 1rem; }
-  .lh-title-ns { line-height: 1.25rem; }
-  .lh-copy-ns  { line-height: 1.5rem; }
+  .lh-solid-ns { line-height: 1; }
+  .lh-title-ns { line-height: 1.25; }
+  .lh-copy-ns  { line-height: 1.5; }
 }
 
 @media (--breakpoint-medium) {
-  .lh-solid-m { line-height: 1rem; }
-  .lh-title-m { line-height: 1.25rem; }
-  .lh-copy-m  { line-height: 1.5rem; }
+  .lh-solid-m { line-height: 1; }
+  .lh-title-m { line-height: 1.25; }
+  .lh-copy-m  { line-height: 1.5; }
 
-  .lh-large-l { line-height: 5rem; }
+  .lh-large-l { line-height: 5; }
 }
 
 @media (--breakpoint-large) {
-  .lh-solid-l { line-height: 1rem; }
-  .lh-title-l { line-height: 1.25rem; }
-  .lh-copy-l  { line-height: 1.5rem; }
+  .lh-solid-l { line-height: 1; }
+  .lh-title-l { line-height: 1.25; }
+  .lh-copy-l  { line-height: 1.5; }
 }

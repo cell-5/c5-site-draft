@@ -1,15 +1,16 @@
+{{ partial "title" (dict "heading" .heading) }}
 <div id="myCarousel" class="carousel slide h-80" data-ride="carousel">
     <!-- Wrapper for slides -->
     <div class="carousel-inner ">
         {{ range $index, $element := .lists }}
         <div class="item {{ if eq $index 0}}active{{ end }}">
             <div class="clients tc h-100">
-                <div class="f5 fw6 pa4">
+                <div class="f3 fw6 pa4">
                     <img src="/img/SVG/quote-mark.svg" alt="" />
-                    <div class="h-line"></div>
+                    <div class="bt b--black w-50 mv3 center"></div>
                     <p>{{ .text }}</p>
                     <h3 class="b mt4">{{ .name }}</h3>
-                    <p class="f8 normal">{{ .company }}</p>
+                    <span class="f4 normal">{{ .company }}</span>
                 </div>
             </div>
         </div>

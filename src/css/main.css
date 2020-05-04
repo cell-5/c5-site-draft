@@ -11,13 +11,19 @@
 @import "./imports/_font-style";
 @import "./imports/_font-weight";
 @import "./imports/_heights";
+@import "./imports/_images";
 @import "./imports/_line-height";
+@import "./imports/_lists";
 @import "./imports/_max-widths";
 @import "./imports/_positions";
 @import "./imports/_spacing";
+@import "./imports/_svg";
+@import "./imports/_states";
 @import "./imports/_text-align";
 @import "./imports/_text-transform";
 @import "./imports/_type-scale";
+@import "./imports/_typography";
+@import "./imports/_utilities";
 @import "./imports/_widths";
 @import "./imports/_z-index";
 
@@ -33,22 +39,6 @@
     box-sizing: border-box;
 }
 
-html, body{
-    margin: 0;
-    padding: 0;
-    font-family: var(--font-family);
-    line-height: var(--line-height);
-    font-size: var(--font-size);
-}
-
-svg{
-    fill: currentColor;
-    fill-rule:evenodd;
-    clip-rule:evenodd;
-    max-width: 100%;
-    display: block;
-}
-
 button {
     border: none;
     outline: none;
@@ -56,30 +46,11 @@ button {
     border-radius: 5px;
     font-size: inherit;
     font-family: inherit;
-    padding: 5px 50px;
+    padding: 10px 50px;
 }
 
-img {
-    max-width: 100%;
-}
-
-@media screen and (--breakpoint-medium) {
-  html {
-    font-size: 2vw;
-  }
-}
-
-@media screen and (--breakpoint-extra-large) {
-  html {
-    font-size: 1em;
-  }
-}
-
-/*-- These are custom CSS for Shapes -- */
-.h-line{
-    border-top: 2px solid #000000;
-    width: 50%;
-    margin: 20px auto;
+ol, ul {
+	list-style: none;
 }
 
 /*-- These are custom CSS for Containers -- */
@@ -110,61 +81,16 @@ img {
     height: 100%;
 }
 
-/*-- These are custom CSS for HTML tags -- */
-/*List*/
-.social-media ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: left;
-}
-
-.social-media ul li a {
-  text-decoration: none;
-  color: #ffffff;
-  display: block;
-  cursor: pointer;
-}
-
-.checklist li {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    padding: 10px 0px;
-}
-
 /*Heading*/
 .blog-1 h3 {
-    font-size: 2.5rem;
-    line-height: 3.5rem;
     color: #AA6BF1;
     margin-bottom: 1rem;
 }
 
 .blog-2 h3{
-    font-size: 2.5rem;
-    line-height: 3.5rem;
     color: #46D9FC;
     margin-bottom: 1rem;
 }
-
-/*Paragraph*/
-.blog p {
-    padding: var(--spacing-large);
-}
-
-/*-- These are custom CSS for alignment and positions -- */
-/*Horizontal Alignment*/
-.center {
-    margin-right: auto;
-    margin-left: auto;
-}
-
 
 /*-- These are custom CSS by Page-- */
 /*Home Page*/
@@ -181,41 +107,32 @@ img {
 .home p {
     font-size: 2.5rem;
     font-weight: bold;
+    line-height: 2.5rem;
 }
 
-.home-techs-gallery{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    flex-direction: row;
-}
-
-.home-techs-gallery img{
-    margin: 10px;
-    max-width: 60px;
-    height: 60px;
-}
 
 /*People Page*/
-.people-gallery{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    flex-direction: row;
-}
-
-.people-gallery img {
+.gallery img{
     margin: 10px;
     box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
     max-width: 150px;
     height: 150px;
 }
 
-@media only screen and (--breakpoint-medium) {
-    .people img {
+@media screen and (--breakpoint-medium) {
+  html {
+    font-size: 2vw;
+  }
+
+  .people img {
         position: absolute;
         width: 80%;
     }
 }
 
+@media screen and (--breakpoint-extra-large) {
+  html {
+    font-size: 1em;
+  }
+}
 

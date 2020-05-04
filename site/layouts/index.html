@@ -2,51 +2,27 @@
 
 {{ partial "home" .Params }}
 
-<section class="view-wrapper bg-black-2 tc white">
+<div class="view-wrapper bg-black-2 tc white">
     {{ partial "blog-table" .Params.OurWork }}
     {{ partial "waves" (dict "svg" "waves-1" "viewbox" "0 0 1920 388") }}
-</section>
-<section class="view-wrapper tc bg-white">
+</div>
+<div class="view-wrapper tc bg-white">
     <div class="mw9 center h-100 relative ph4">
         <div class="absolute absolute--center bl-m b--grey-2 h-75"></div>
-        <div class="flex-m flex-row-m flex-wrap-m">
-            <div class="flex-none w-50-m">
-                {{ partial "blog-media" .Params.WhoWeAre}}
-            </div>
-            <div class="flex-none w-50-m">
-                {{ partial "blog-media" .Params.HowWeWork}}
-            </div>
-        </div>
+        {{ partial "media-block" (dict "layoutL" "blog-media" "LParams" .Params.WhoWeAre "layoutR" "blog-media" "RParams" .Params.HowWeWork) }}
     </div>
     {{ partial "waves" (dict "svg" "waves-2" "viewbox" "0 0 1920 395") }}
-</section>
-<section class="view-wrapper bg-black-2 tc white">
-    {{ partial "title" .Params.TechWeKnow }}
-    <div class="mt4">
-        {{ partial "tech-section" .Params.TechWeKnow }}
-    </div>
-    <div class="f3 tc lh-header">
-        {{ partial "wide-text" .Params.TechWeKnow }}
-    </div>
+</div>
+<div class="view-wrapper bg-black-2 tc white">
+    {{ partial "tech-section" .Params.TechWeKnow }}
     {{ partial "waves" (dict "svg" "waves-3" "viewbox" "0 0 1920 397") }}
-</section>
-<section class="view-wrapper tc bg-white">
+</div>
+<div class="view-wrapper tc bg-white">
     <div class="mw9 center h-100 relative ph4">
-        <div class="flex-m flex-row-m flex-wrap-m">
-            <div class="w-50-m ph4">
-                {{ partial "title" .Params.qualifications }}
-                {{ partial "checklist" .Params.qualifications }}
-            </div>
-            <div class="w-50-m ph4">
-                {{ partial "title" .Params.feedbacks }}
-                {{ partial "carousel" .Params.feedbacks }}
-            </div>
-        </div>
-        <div class="white mt4">
-            {{ partial "cta" (dict "moreLink" .Params.moreLink "linkUrl" .Params.linkUrl)}}
-        </div>
+        {{ partial "media-block" (dict "layoutL" "checklist" "LParams" .Params.qualifications "layoutR" "carousel"  "RParams" .Params.feedbacks) }}
+        {{ partial "cta" (dict "moreLink" .Params.moreLink "linkUrl" .Params.linkUrl)}}
     </div>
-</section>
+</div>
 
 {{ partial "svg-waves" . }}
 

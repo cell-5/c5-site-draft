@@ -1,8 +1,9 @@
-<div class="checklist tl">
+{{ partial "title" (dict "heading" .heading) }}
+<ul>
     {{ range $index, $element := .lists }}
-    <li>
+    <li class="flex items-center tl">
         <img src="/img/SVG/checkmark.svg" class="v-mid" />
         <div class="f3 b fs-normal">{{ .text }}</div>
     </li>
     {{ end }}
-</div>
+</ul>

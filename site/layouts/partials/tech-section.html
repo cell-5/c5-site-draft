@@ -1,4 +1,5 @@
-<div class="mw9 center h-100 relative ph5 tl">
+{{ partial "title" (dict "heading" .heading) }}
+<div class="mw9 center h-100 relative ph5 tl mt4">
     {{ range $index, $element := .lists }}
     {{ if modBool $index 3 }}
     <div class="flex-m flex-row-m flex-wrap-m">
@@ -6,10 +7,10 @@
         <div class="w-third-m">
             <div class="pa3 h-100">
                 <div class="card pa4">
-                    <span class="black underline f8 b">{{ .group }}</span>
-                    <div class="home-techs-gallery">
+                    <span class="black underline f4 b">{{ .group }}</span>
+                    <div class="flex flex-wrap flex-row justify-center">
                         {{ range $index, $element := .tech }}
-                        <img src="{{ .imageUrl }}" />
+                        <img src="{{ .imageUrl }}" class="h3 w3 ma2" />
                         {{ end }}
                     </div>
                 </div>
@@ -19,4 +20,7 @@
     </div>
     {{ end }}
     {{ end }}
+</div>
+<div class="f2 tc">
+    {{ partial "wide-text" (dict "text" .text) }}
 </div>

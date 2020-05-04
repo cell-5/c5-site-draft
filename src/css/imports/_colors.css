@@ -48,6 +48,10 @@
   background-color: var(--secondary);
 }
 
+.bg-tertiary {
+  background-color: var(--tertiary);
+}
+
 .bg-dark-blue{
   background-color: var(--dark-blue);
 }

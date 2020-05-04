@@ -1,9 +1,11 @@
 <section class="home view-wrapper bg-gradient-1 white">
-    <div class="mw9 center relative z-1 pt5 ph4">
+    <div class="mw9 center relative z-1 pt5 ph4 lh-solid">
         <div class="flex-m flex-row-m flex-wrap-m">
             <div class="flex-none w-50-m">
                 {{ .heading | markdownify }}
-                {{ .text | markdownify }}
+                <div class="mt4">
+                    {{ .text | markdownify }}
+                </div>
             </div>
             <div class="flex-none w-50-m">
                 <img src="{{ .bannerImg }}" class="dn-ns" />
