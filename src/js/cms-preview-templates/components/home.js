@@ -5,22 +5,20 @@ export default class Jumbotron extends React.Component {
     const { image, heading, text } = this.props;
 
     <section class="home view-wrapper bg-gradient-1 white">
-      <div class="home mw9 center relative z-1">
-        <div class="row w-100 pv5">
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-            <div class="banner">
-              {heading}
-            </div>
-            <div class="text">
+      <div class="mw9 center relative z-1 pt3 pt5-m ph4 lh-solid">
+        <div class="flex-m flex-row-m flex-wrap-m">
+          <div class="flex-none w-50-l">
+            {heading}
+            <div class="mt3 mt4-m">
               {text}
             </div>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-            <img src={image} />
+          <div class="flex-none w-50-l">
+            <img src={image} class="dn db-l" />
           </div>
         </div>
       </div>
-      <svg viewBox="0 0 1920 395" class="absolute bottom-0">
+      <svg viewBox="0 0 1920 395" aria-hidden="true" class="absolute-l bottom-0-l">
         <path opacity="0.123"
           d="M1920 15.4326C1920 15.4326 1709.21 -47.2841 1543.66 80.1453C1378.1 207.575 1215.35 197.53 1088.6 176.819C961.858 156.109 757.697 111.99 457.5 305C432.217 322.299 101.663 386.455 0.0795509 369.337C-0.0994701 368.908 0.0795648 385.5 0.0795648 385.5H953H1920V15.4326Z"
           fill="white" />
@@ -34,7 +32,7 @@ export default class Jumbotron extends React.Component {
           d="M0 366.804C0 366.804 91.8627 356.446 239.399 295.623C325.944 261.974 468.987 246.187 570.998 260.966C698.485 274.539 760.203 291.068 904.983 260.966C1049.76 230.865 1635.73 138.902 1919.87 158.789C1920.16 159.726 1919.87 395 1919.87 395H963.5H0V366.804Z"
           fill="#25272E" />
       </svg>
-    </section>
+    </section >
 
   }
 }
