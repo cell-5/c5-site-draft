@@ -1,9 +1,9 @@
 {{ partial "title" (dict "heading" .heading) }}
-<ul>
+<ul class="ph3">
     {{ range $index, $element := .lists }}
     <li class="flex items-center tl">
         <img src="/img/SVG/checkmark.svg" class="v-mid" />
-        <div class="f3 b fs-normal">{{ .text }}</div>
+        <div class="f5-m b fs-normal">{{ .text }}</div>
     </li>
     {{ end }}
 </ul>

@@ -1,12 +1,12 @@
 html {
   font-size: var(--font-size);
+
   @media (--breakpoint-medium) {
     font-size: var(--font-size-m);
   }
-  @media (--breakpoint-large) {
+  @media (--breakpoint-extra-large) {
     font-size: var(--font-size-l);
   }
-  background-color: var(--black);
 }
 
 

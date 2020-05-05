@@ -1,8 +1,9 @@
 :root {
 	/* Colors */
     --primary: #FF39BE;
-	--secondary: #4B4AA1;
-	--tertiary: #9E22E9;
+	--purple: #AA6BF1;
+	--light-purple: #9E22E9;
+	--cyan: #46D9FC;
 	--dark-blue: #21214A;
 	--highlight: rgba(254, 213, 198, 1);
 	--white: rgba(255, 255, 255, 1);
@@ -19,9 +20,9 @@
 	--font-family: Playfair Display;
 	--line-height: 1.5;
 
-	--font-size: 16px;
-	--font-size-m: 18px;
-	--font-size-l: 20px;
+	--font-size: 1em;
+	--font-size-m: 2vw;
+	--font-size-l: 1.5em;
 
 	--body-font-weight: 400;
 	--bold-font-weight: 800;
@@ -39,11 +40,4 @@
 	/* Miscelaneous */
 	--border-radius: .25rem;
 	--hover-transition: all 150ms ease;
-
-	/*breakpoint*/
-	--breakpoint-xs: 0rem;
-	--breakpoint-sm: 36rem;
-	--breakpoint-md: 48rem;
-	--breakpoint-lg: 62rem;
-	--breakpoint-xl: 75rem;
 }

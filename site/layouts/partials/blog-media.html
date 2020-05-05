@@ -1,6 +1,6 @@
-<div class="w-100 h-90 ph4-m">
-    <h3 class="f1-m fw9 mb4">{{ .heading }}</h3>
-    <div class="blog mb2 b f3-m">{{ .text | markdownify}}</div>
+<div class="w-100 h-85-m">
+    <h3 class="f2-m fw9 mb2">{{ .heading }}</h3>
+    <div class="blog b f5-m">{{ .text | markdownify}}</div>
 </div>
 {{ if .moreLink }}
 {{ partial "cta" (dict "moreLink" .moreLink "linkUrl" .linkUrl)}}
