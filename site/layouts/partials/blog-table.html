@@ -16,6 +16,8 @@
     {{ end }}
     {{ end }}
     {{ if .moreLink  }}
-    {{ partial "cta" (dict "moreLink" .moreLink "linkUrl" .linkUrl)}}
+    <div class="mt4-m">
+        {{ partial "cta" (dict "moreLink" .moreLink "linkUrl" .linkUrl)}}
+    </div>
     {{ end }}
 </div>
