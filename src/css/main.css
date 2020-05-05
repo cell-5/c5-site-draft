@@ -119,6 +119,16 @@ ol, ul {
 }
 
 /*Home Page*/
+.home h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.home h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+ 
 .home p {
     margin: 0;
  }

@@ -1,5 +1,5 @@
 {{ partial "title" (dict "heading" .heading) }}
-<div class="mw9 center h-100 relative ph5 tl mt4">
+<div class="mw9 center h-100 relative ph5 tl">
     {{ range $index, $element := .lists }}
     {{ if modBool $index 3 }}
     <div class="flex-m flex-row-m flex-wrap-m">
