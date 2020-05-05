@@ -15,7 +15,7 @@ export default class Jumbotron extends React.Component {
             }
         });
 
-        <div class="mw7 center f4-m white ph1">
+        return <div class="mw7 center f4-m white ph1">
             <div class="fw9 mb3">{heading}</div>
             {
                 even.map((row, index) => {

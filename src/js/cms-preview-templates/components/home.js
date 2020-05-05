@@ -4,7 +4,7 @@ export default class Jumbotron extends React.Component {
   render() {
     const { image, heading, text } = this.props;
 
-    <section class="home view-wrapper bg-gradient-1 white">
+    return <section class="home view-wrapper bg-gradient-1 white">
       <div class="mw9 center relative z-1 pt3 pt5-m ph4 lh-solid">
         <div class="flex-m flex-row-m flex-wrap-m">
           <div class="flex-none w-50-l">

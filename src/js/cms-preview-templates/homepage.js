@@ -31,6 +31,46 @@ export default class PostPreview extends React.Component {
               fill="white" />
           </svg>
         </div>
+        <div class="view-wrapper tc bg-white">
+          <div class="mw9 center h-100 relative ph4">
+            <div class="absolute absolute--center bl-m b--grey-2 h-75"></div>
+            <div class="flex-m flex-row-m flex-wrap-m">
+              <div class="flex-none w-50-m ph4-m mb4">
+                <div class="w-100 h-85-m">
+                  <h3 class="f2 fw9 mb2">{entry.getIn(["data", "WhoWeAre.heading"])}</h3>
+                  <div class="blog b f5-m">{entry.getIn(["data", "WhoWeAre.text"])}</div>
+                </div>
+                <div class="mt4-m">
+                  <button class="bg-primary f5-m b fs-normal white">
+                    {entry.getIn(["data", "WhoWeAre.moreLink"])}
+                  </button>
+                </div>
+              </div>
+              <div class="flex-none w-50-m ph4-m mb4">
+                <div class="w-100 h-85-m">
+                  <h3 class="f2 fw9 mb2">{entry.getIn(["data", "HowWeWork.heading"])}</h3>
+                  <div class="blog b f5-m">{entry.getIn(["data", "HowWeWork.text"])}</div>
+                </div>
+                <div class="mt4-m">
+                  <button class="bg-primary f5-m b fs-normal white">
+                    {entry.getIn(["data", "HowWeWork.moreLink"])}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <svg aria-hidden="true" viewBox="0 0 1920 395">
+            <path opacity="0.5"
+              d="M0.00012207 15.4326C0.00012207 15.4326 210.791 -47.2841 376.344 80.1453C541.897 207.575 704.652 197.53 831.397 176.819C958.142 156.109 1162.3 111.99 1462.5 305C1628.5 355 1818.34 386.455 1919.92 369.337C1920.1 368.908 1919.92 385.5 1919.92 385.5H967H0.00012207V15.4326Z"
+              fill="#9E22E9" />
+            <path opacity="0.5"
+              d="M-0.000106812 75.6076C-0.000106812 75.6076 155.922 83.5346 278.789 38.5928C401.657 -6.34904 771.359 162.573 795.171 170.144C818.984 177.715 980.379 219.103 1180.26 208.719C1380.15 198.336 1874.45 299.911 1920 319.766C1918.57 320.299 1920 382 1920 382H-0.000106812V75.6076Z"
+              fill="#9E22E9" />
+            <path
+              d="M1920 365.743C1920 365.743 1828.14 354.994 1680.6 291.881C1594.06 256.965 1451.01 240.583 1349 255.919C1221.52 270.003 1159.8 287.154 1015.02 255.919C870.238 224.684 284.266 129.259 0.127686 149.894C-0.15951 150.867 0.127686 395 0.127686 395H956.5H1920V365.743Z"
+              fill="#25272E" />
+          </svg>
+        </div>
       </div>
     )
   }
