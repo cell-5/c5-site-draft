@@ -1,11 +1,11 @@
-{{ partial "title" (dict "heading" .heading) }}
-<div class="mw9 center h-100 relative ph5 tl">
+<div class="mw9 center relative ph5">
+    {{ partial "title" (dict "heading" .heading) }}
     {{ range $index, $element := .lists }}
     {{ if modBool $index 3 }}
     <div class="flex-m flex-row-m flex-wrap-m">
         {{ end }}
         <div class="w-third-m pa2">
-            <div class="pa3 br1 bg-white h-100">
+            <div class="pa3 br1 bg-white h-100 tl">
                 <span class="black underline f5-m b">{{ .group }}</span>
                 <div class="flex flex-wrap flex-row justify-center">
                     {{ range $index, $element := .tech }}
@@ -18,7 +18,7 @@
     </div>
     {{ end }}
     {{ end }}
-</div>
-<div class="f3-m mt3 tc">
-    {{ partial "wide-text" (dict "text" .text) }}
+    <div class="f3-m mt3 tc">
+        {{ partial "wide-text" (dict "text" .text) }}
+    </div>
 </div>

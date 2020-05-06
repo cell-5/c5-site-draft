@@ -16,7 +16,7 @@ export default class PostPreview extends React.Component {
       <div>
         <Home image={image} heading={entry.getIn(["data", "heading"])} text={entry.getIn(["data", "text"])} />
 
-        <div class="view-wrapper bg-black-2 tc white">
+        <div class="bg-black-2 tc white">
           <BlogTable heading={entry.getIn(["data", "OurWork.heading"])} moreLink={entry.getIn(["data", "OurWork.moreLink"])} content={entry.getIn(["data", "OurWork.content"])} />
 
           <svg aria-hidden="true" viewBox="0 0 1920 388">
@@ -31,7 +31,7 @@ export default class PostPreview extends React.Component {
               fill="white" />
           </svg>
         </div>
-        <div class="view-wrapper tc bg-white">
+        <div class="tc bg-white">
           <div class="mw9 center h-100 relative ph4">
             <div class="absolute absolute--center bl-m b--grey-2 h-75"></div>
             <div class="flex-m flex-row-m flex-wrap-m">

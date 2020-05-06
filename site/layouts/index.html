@@ -2,22 +2,22 @@
 
 {{ partial "home" .Params }}
 
-<div class="view-wrapper bg-black-2 tc white">
+<div class="bg-black-2 tc white">
     {{ partial "blog-table" .Params.OurWork }}
     {{ partial "waves" (dict "svg" "waves-1" "viewbox" "0 0 1920 388") }}
 </div>
-<div class="view-wrapper tc bg-white">
-    <div class="mw9 center h-100 relative ph4">
+<div class="tc bg-white">
+    <div class="mw9 center relative ph4">
         <div class="absolute absolute--center bl-m b--grey-2 h-75"></div>
         {{ partial "media-block" (dict "layoutL" "blog-media" "LParams" .Params.WhoWeAre "layoutR" "blog-media" "RParams" .Params.HowWeWork) }}
     </div>
     {{ partial "waves" (dict "svg" "waves-2" "viewbox" "0 0 1920 395") }}
 </div>
-<div class="view-wrapper bg-black-2 tc white">
+<div class="bg-black-2 tc white">
     {{ partial "tech-section" .Params.TechWeKnow }}
     {{ partial "waves" (dict "svg" "waves-3" "viewbox" "0 0 1920 397") }}
 </div>
-<div class="view-wrapper tc bg-white">
+<div class="tc bg-white">
     <div class="mw9 center h-100 relative ph4">
         {{ partial "media-block" (dict "layoutL" "checklist" "LParams" .Params.qualifications "layoutR" "carousel"  "RParams" .Params.feedbacks) }}
         <br />

@@ -111,57 +111,38 @@ ol, ul {
 	list-style: none;
 }
 
-/*-- These are custom CSS for Containers -- */
-.view-wrapper {
-    height: calc(100% - 5px);
-    position: relative;
-    -webkit-overflow-scrolling: touch;
-}
-
-/*Home Page*/
-.home h1 {
-    font-size: 3rem;
+h1 {
+    font-size: 5em;
     font-weight: 900;
 }
 
-.home h2 {
+h2 {
+    font-size: 3em;
+    font-weight: 900;
+}
+
+/*-- These are custom CSS for Containers -- */
+/*Home Page*/
+.home {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.home p {
     font-size: 1.5rem;
     font-weight: bold;
-}
- 
-.home p {
     margin: 0;
- }
-
-/*People Page*/
-.gallery img{
-    margin: 10px;
-    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
-    max-width: 100px;
-    height: 100px;
 }
 
 @media screen and (--breakpoint-medium) {
 
- .gallery img{
-    margin: 10px;
-    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
-    max-width: 150px;
-    height: 150px;
- }
+    .home {
+        position: static;
+        top: 0;
+        transform: none;
+    }
 
- .home h1 {
-    font-size: 6rem;
-    font-weight: 900;
- }
-
- .home h2 {
-    font-size: 3rem;
-    font-weight: bold;
- }
-
- .home p {
-    font-size: 1.5rem;
-    font-weight: bold;
- }
 }
