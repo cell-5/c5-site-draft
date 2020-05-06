@@ -15,20 +15,28 @@
     </div>
     {{ partial "waves" (dict "svg" "waves-1" "viewbox" "0 0 1920 388") }}
 </div>
-<div class="bg-white">
-    <div class="pv4-m">
-        {{ partial "people-widget" (dict "people" .Params.people )}}
-    </div>
+<div class="vh-90 bg-white pv4-m">
+    {{ partial "people-widget" (dict "people" .Params.people )}}
 </div>
 
 {{ partial "svg-waves" . }}
 <script>
-    function ShowPeopleData(element) {
+    function ShowPeopleData(element, index) {
         let jsonData = JSON.parse(element);
 
         document.getElementById("name-data").innerHTML = jsonData.name;
         document.getElementById("title-data").innerHTML = jsonData.title;
         document.getElementById("bio-data").innerHTML = jsonData.bio;
+
+        var items = document.getElementById("people-gallery").getElementsByTagName("div");
+        for (let i = 0; i < items.length; i++) {
+            let itemData = document.getElementById("people-" + i);
+            if (i != Number(index)) {
+                itemData.classList.remove("selected");
+            } else {
+                itemData.classList.add("selected");
+            }
+        }
     }
 
 </script>

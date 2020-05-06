@@ -27,7 +27,10 @@
     <div class="pv5">
         <div class="mw9 center relative ph4">
             {{ partial "media-block" (dict "layoutL" "checklist" "LParams" .Params.qualifications "layoutR" "carousel"  "RParams" .Params.feedbacks) }}
-            {{ partial "cta" (dict "moreLink" .Params.moreLink "linkUrl" .Params.linkUrl)}}
+            <div class="mt5">
+                {{ partial "cta" (dict "moreLink" .Params.moreLink "linkUrl" .Params.linkUrl)}}
+            </div>
+
         </div>
     </div>
 </div>

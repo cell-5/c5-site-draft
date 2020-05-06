@@ -1,10 +1,11 @@
 <div class="mw9 cener ph4">
     <div class="flex-m flex-row-m flex-wrap-m w-100">
         <div class="w-50-m">
-            <div class="flex flex-wrap flex-row self-start">
+            <div id="people-gallery" class="flex flex-wrap flex-row self-start">
                 {{ range $index, $element := .people }}
-                <div id="{{ .name }}" class="raise pointer h3 w3 h-auto-m w-auto-m ma2"
-                    onclick='ShowPeopleData("{{ $element | jsonify }}")'>
+                <div id="people-{{ $index }}"
+                    class="{{ if eq $index 0 }}selected{{ end }} raise pointer h3 w3 h-auto-m w-auto-m ma2"
+                    onclick='ShowPeopleData("{{ $element | jsonify }}", "{{ $index }}")'>
                     <img src="{{ .imageUrl }}" />
                 </div>
                 {{ end }}
