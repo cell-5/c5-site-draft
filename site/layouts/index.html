@@ -27,8 +27,9 @@
     <div class="vh-90 flex items-center">
         <div class="mw9 center h-100 relative ph4">
             {{ partial "media-block" (dict "layoutL" "checklist" "LParams" .Params.qualifications "layoutR" "carousel"  "RParams" .Params.feedbacks) }}
-            <br />
-            {{ partial "cta" (dict "moreLink" .Params.moreLink "linkUrl" .Params.linkUrl)}}
+            <div class="mt5 mt0-m">
+                {{ partial "cta" (dict "moreLink" .Params.moreLink "linkUrl" .Params.linkUrl)}}
+            </div>
         </div>
     </div>
 </div>
