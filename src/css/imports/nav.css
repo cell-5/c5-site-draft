@@ -17,26 +17,7 @@
   overflow: hidden;
 }
 
-.nav-container .logo-footer {
-    max-width: 85px;
-    padding: 0 10px;
-    overflow: hidden;
- }
 
-.nav-container .logo-footer a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.nav-container .logo-footer a:focus {
-  box-shadow: none !important;
-}
 
 .nav-container .logo-footer a img {
   max-width: 85px;
@@ -138,64 +119,23 @@
   content: url("/img/icons/icon-menu.svg");
 }
 
-.nav-socmed {
-  height: auto;
-  background-color: transparent;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.nav-socmed .navbar-socmed {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  justify-content: flex-end;
-  padding: 0 10px;
-}
-
-.nav-socmed .navbar-socmed ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-socmed .navbar-socmed ul li a {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  display: block;
-  cursor: pointer;
-  padding: 0 10px;
-}
-
-.nav-socmed .navbar-socmed ul li a:focus {
-  box-shadow: none !important;
-}
 
 
 @media only screen and (max-width: 799px) {
+  .nav-footer{
+    justify-content: center !important;
+  }
+
   .nav-container {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+  }
+
+  .nav-container-footer {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: center;
   }
 
   .nav-container .logo {
@@ -256,10 +196,6 @@
     left: 50%;
     width: 50%;
     z-index: 9999;
-  }
-  
-  .nav-socmed{
-    display: none;
   }
 
    .nav-container .navbar .drawer-open {
