@@ -141,6 +141,11 @@ h2 {
     margin: 0;
 }
 
+/*Our Work Page*/
+.clients {
+    background: rgba(225, 225, 225, 0.3);
+}
+
 @media screen and (--breakpoint-medium) {
 
     .home {
