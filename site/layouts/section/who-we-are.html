@@ -2,9 +2,9 @@
 
 <div class="bg-black-2">
     <div class="mw9 center relative z-1 pv4-m ph4">
-        <div class="people flex-m flex-row-m flex-wrap-m">
+        <div class="flex-m flex-row-m flex-wrap-m">
             <div class="w-60-m relative">
-                <div class="white f1 f-5-m fw9 lh-copy">
+                <div class="white tc tl-m f1 f-5-m fw9 lh-copy">
                     {{ .Params.title }}
                 </div>
             </div>
@@ -15,7 +15,7 @@
     </div>
     {{ partial "waves" (dict "svg" "waves-1" "viewbox" "0 0 1920 388") }}
 </div>
-<div class="vh-90 bg-white pv4-m">
+<div class="vh-90-m bg-white pv4-m">
     {{ partial "people-widget" (dict "people" .Params.people )}}
 </div>
 
