@@ -1,45 +1,71 @@
 ---
-title: "Values"
-image: /img/about-jumbotron.jpg
+page: ourvalues
+title: "Our Values"
+text: >
+    Each big decision we make as an organization, is measured against these values, especially to filter [the people](/people) and [the clients](/clients) we work with.
+footer: >
+    For existing or previous clients, if you think we can do a better job of representing you, or if there is an opportunity to share value about our work together, we would love the chance to collaborate on that content! Contact us
 values:
-  - heading: "Shade-grown coffee"
+  - heading: "Take action, over deliberation"
     text: >
-      Coffee is a small tree or shrub that grows in the forest
-      understory in its wild form, and traditionally was grown
-      commercially under other trees that provided shade. The
-      forest-like structure of shade coffee farms provides habitat for
-      a great number of migratory and resident species.
-    imageUrl: "/img/about-shade-grown.jpg"
-  - heading: "Single origin"
+      In our experience execution informs strategy the best. 
+      
+
+      Indecision and standing still is not a strategy. 
+      
+      
+      We advise clients to get something live and iterate and we release early and often, in the spirit of [Build-Measure-Learn](https://en.wikipedia.org/wiki/Lean_startup#Build-Measure-Learn).
+
+    imageUrl: "/img/values/value-1.png"
+
+  - heading: "Focus on long term value"
     text: >
-      Single-origin coffee is coffee grown within a single known
-      geographic origin. Sometimes, this is a single farm or a
-      specific collection of beans from a single country. The name of
-      the coffee is then usually the place it was grown to whatever
-      degree available.
-    imageUrl: "/img/about-single-origin.jpg"
-  - heading: "Sustainable farming"
+      We make recruitment and investment decisions from a long-term perspective as this is the only rational way to grow a team, reputation and business. 
+
+      
+      We welcome clients who share this approach. 
+      
+      
+      They need to demonstrate a long term vision focused on value creation, for their customers.
+
+    imageUrl: "/img/values/value-2.png"
+
+  - heading: "Champion remote-first teams"
+    text: >    
+      We believe distributed  remote teams are presently the best way to deliver value to clients.  
+
+
+      Running our business this way keeps our costs down while at the same time it offers our remote employees a better work-life balance, and often better full compensation than working in under-valued local markets on legacy incumbent products.
+
+    imageUrl: "/img/values/value-3.png"
+
+  - heading: "Encourage small businesses & profit sharing"
     text: >
-      Sustainable agriculture is farming in sustainable ways based on
-      an understanding of ecosystem services, the study of
-      relationships between organisms and their environment. What
-      grows where and how it is grown are a matter of choice and
-      careful consideration for nature and communities.
-    imageUrl: "/img/about-sustainable-farming.jpg"
-  - heading: "Direct sourcing"
+      We proudly redistribute 10% of profit as bonuses to our Philippines team at year end.
+      
+      
+      We encourage our team to do side-hussles, or be enterpenuerial provided they deliver for us. We offer a leadership and micro-finance scheme for anyone in the team with an idea they are willing to lead and execute.
+      
+
+      For clients, we offer fee discounts in exchange for equity. This is a no-brainer as we only partner with clients that can convince us their business has merit and is focused on long term value. 
+    imageUrl: "/img/values/value-4.png"
+
+  - heading: "Fail fast, but differently"
     text: >
-      We want to truly empower the communities that bring amazing
-      coffee to you. That’s why we reinvest 20% of our profits into
-      farms, local businesses and schools everywhere our coffee is
-      grown. You can see the communities grow and learn more about
-      coffee farming on our blog.
-    imageUrl: "/img/about-direct-sourcing.jpg"
-  - heading: "Reinvest profits"
+      We encourage a culture that is not judgemental about failure. We all know we learn from failing.
+      
+
+      That said, we expect and demand transparency about failure in order that we can maximize the learning and avoid repeating the same mistakes.
+     
+    imageUrl: "/img/values/value-5.png"
+
+  - heading: "Have empathy"
     text: >
-      We want to truly empower the communities that bring amazing
-      coffee to you. That’s why we reinvest 20% of our profits into
-      farms, local businesses and schools everywhere our coffee is
-      grown. You can see the communities grow and learn more about
-      coffee farming on our blog.
-    imageUrl: "/img/about-reinvest-profits.jpg"
+      The software industry is awash with egos and arrogance and one-up-man-ship which we think gets in the way of team performance. 
+    
+      
+      We recognise individual contributions, but we always put the team ahead of the individual during conflict-resolution and decision-making.
+       
+    imageUrl: "/img/values/value-6.png"
+ 
 ---

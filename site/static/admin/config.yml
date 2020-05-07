@@ -96,10 +96,9 @@ collections: # A list of collections the CMS should be able to edit
                   - {label: Company, name: company, widget: string}
                   - {label: Text, name: text, widget: text}
                   - {label: Image, name: imageUrl, widget: image}
-          
-      - file: "site/content/who-we-are/_index.md"
+      - file: "site/content/people/_index.md"
         label: "Who We Are Page"
-        name: "who-we-are"
+        name: "people"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
@@ -111,4 +110,51 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Title, name: title, widget: string}
               - {label: Image, name: image, widget: image}
               - {label: Bio, name: bio, widget: text}
+      - file: "site/content/works/_index.md"
+        label: "Our Work Page"
+        name: "works"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Footer, name: footer, widget: text}
+          - {label: Text, name: text, widget: text}
+          - {label: Image, name: imageUrl, widget: image}
+          - label: Clients
+            name: clients
+            widget: list
+            fields:
+              - {label: Heading, name: heading, widget: string}
+              - {label: Text, name: text, widget: text}
+              - {label: Image, name: imageUrl, widget: image}
+      - file: "site/content/process/_index.md"
+        label: "How We Work Page"
+        name: "process"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Footer, name: footer, widget: text}
+          - {label: Text, name: text, widget: text}
+          - {label: Image, name: imageUrl, widget: image}
+          - label: Process
+            name: process
+            widget: list
+            fields:
+              - {label: Heading, name: heading, widget: string}
+              - label: Details
+                name: details
+                widget: list
+                fields:
+                  - {label: Heading, name: heading, widget: string}
+                  - {label: Text, name: text, widget: text}
+      - file: "site/content/values/_index.md"
+        label: "Our Values Page"
+        name: "values"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Footer, name: footer, widget: text}
+          - {label: Text, name: text, widget: text}
+          - label: Values
+            name: values
+            widget: list
+            fields:
+              - {label: Heading, name: heading, widget: string}
+              - {label: Text, name: text, widget: text}
       
