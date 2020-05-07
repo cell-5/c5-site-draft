@@ -146,6 +146,11 @@ h2 {
     background: rgba(225, 225, 225, 0.3);
 }
 
+/*How We Work Page*/
+.process {
+    font-family: Cabin Sketch;
+}
+
 @media screen and (--breakpoint-medium) {
 
     .home {

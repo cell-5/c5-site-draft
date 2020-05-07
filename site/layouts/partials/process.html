@@ -1,0 +1,13 @@
+<div class="process tc">
+    <h2 class="primary mb4">{{ .heading }}</h2>
+    {{ $lastIndex := (len .details) }}
+    {{ range $index, $element := .details }}
+    <div>
+        <h3 class="purple lh-copy f3 mb4">{{ .heading }}</h3>
+        <div class="lh-title f5">{{ .text }}</div>
+    </div>
+    {{ if ne (add $index 1) $lastIndex }}
+    <img src="/img/SVG/arrow-down.svg" />
+    {{ end }}
+    {{ end }}
+</div>
