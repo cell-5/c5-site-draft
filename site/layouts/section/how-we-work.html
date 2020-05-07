@@ -19,19 +19,13 @@
 </div>
 
 <div class="mw9 ph4">
-    {{ range $index, $element := .Params.process }}
-    {{ if modBool $index 2 }}
     <div class="flex-m flex-row-m flex-wrap-m">
-        <div class="w-50-m ph4">
+        {{ range $index, $element := .Params.process }}
+        <div class="w-50-m pv5 pv0-m ph4">
             {{ partial "process" $element }}
         </div>
-        {{ else }}
-        <div class="w-50-m ph4">
-            {{ partial "process" $element }}
-        </div>
+        {{ end }}
     </div>
-    {{ end }}
-    {{ end }}
 </div>
 
 {{ partial "svg-waves" . }}
