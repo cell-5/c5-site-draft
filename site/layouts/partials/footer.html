@@ -1,13 +1,19 @@
 {{ define "footer" }}
 {{ partial "social-media" . }}
 <footer>
-	<div class="w-100 bg-dark-blue relative z-max">
+	<div class="w-100 bg-light-purple relative z-max">
 		<div class="nav-container nav-footer">
 			<div class="logo">
 				<a href="/">
 					<img src="/img/cell5/cell-5-logo-black.svg" alt="Cell 5 logo" />
 				</a>
 			</div>
+			<ul class="dn flex-m flex-wrap tl">
+				{{ partial "social-icon" (dict "link" "#" "svg" "icons-facebook") }}
+				{{ partial "social-icon" (dict "link" "#" "svg" "icons-twitter") }}
+				{{ partial "social-icon" (dict "link" "#" "svg" "icons-instagram") }}
+				{{ partial "social-icon" (dict "link" "#" "svg" "icons-vimeo") }}
+			</ul>
 			<div class="navbar">
 				<ul id="nav-lists">
 					<li><a href="#">Who we are</a></li>
