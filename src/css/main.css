@@ -151,8 +151,14 @@ h2 {
     font-family: Cabin Sketch;
 }
 
-@media screen and (--breakpoint-medium) {
+/*Our VAlues Page*/
+.values {
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    color: #4B4AA1;
+}
 
+@media screen and (--breakpoint-medium) {
     .home {
         position: static;
         top: 0;
