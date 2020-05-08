@@ -1,4 +1,5 @@
 {{ define "footer" }}
+{{ partial "svg-waves" . }}
 {{ partial "social-media" . }}
 <footer>
 	<div class="w-100 bg-light-purple relative z-max">
@@ -20,13 +21,12 @@
 					<li><a href="/works">Our Work</a></li>
 					<li><a href="/process">How We Work</a></li>
 					<li><a href="/values">Our Values</a></li>
-					<li><a href="#">Tech We Know</a></li>
+					<li><a href="/tech">Tech We Know</a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
 </footer>
-
 <script src="/app.js"></script>
 <script>
 	var navList = document.getElementById("nav-lists");

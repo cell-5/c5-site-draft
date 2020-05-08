@@ -1,44 +1,27 @@
 {{ define "main" }}
 
-<div class="bg-black-2">
-    <div class="mw9 center relative z-1 pv4-m ph4">
+{{ partial "header" (dict "title" .Params.title "imageUrl" .Params.imageUrl "text" .Params.text) }}
+
+<div class="mw9 pv5 ph4">
+    {{ range $index, $element := .Params.clients }}
+    <div class="pv4 bt b--grey-2">
         <div class="flex-m flex-row-m flex-wrap-m">
-            <div class="tc tl-m w-50-m relative">
-                <div class="white f1 f-5-m fw9 lh-copy">
-                    {{ .Params.title }}
-                </div>
+            <div class="flex-none w-40-m ph4-m mb4 mb0-m">
+                <img src="{{ .imageUrl }}" class="ba b--black" />
             </div>
-            <div class="w-50-m relative">
-                <img src="{{ .Params.imageUrl }}" class="w-80 absolute-m dn db-m" />
+            <div class="flex-none w-60-m ph4-m">
+                <div class="clients br1 pa3">
+                    <h3 class="{{ if modBool $index 2 }}purple{{else}}cyan{{end}} f3 fw9 mb2 lh-title">
+                        {{ .heading }}
+                    </h3>
+                    <div class="f6 lh-copy">{{ .text | markdownify }}</div>
+                </div>
             </div>
         </div>
     </div>
-    {{ partial "waves" (dict "svg" "waves-1" "viewbox" "0 0 1920 388") }}
-</div>
-
-<div class="mw9 ph4">
-    <div class="pa4 f5 b tc">{{ .Params.text | markdownify }}</div>
-    <div class="pv5">
-        {{ range $index, $element := .Params.clients }}
-        <div class="pv4 bt b--grey-2">
-            <div class="flex-m flex-row-m flex-wrap-m">
-                <div class="flex-none w-40-m ph4-m mb4 mb0-m">
-                    <img src="{{ .imageUrl }}" class="ba b--black" />
-                </div>
-                <div class="flex-none w-60-m ph4-m">
-                    <div class="clients br1 pa3">
-                        <h3 class="{{ if modBool $index 2 }}purple{{else}}cyan{{end}} f3 fw9 mb2 lh-title">
-                            {{ .heading }}
-                        </h3>
-                        <div class="f6 lh-copy">{{ .text | markdownify }}</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        {{ end }}
-        <div class="pt6 bt b--grey-2 tc f6">
-            {{ .Params.footer | markdownify }}
-        </div>
+    {{ end }}
+    <div class="pt6 bt b--grey-2 tc f6">
+        {{ .Params.footer | markdownify }}
     </div>
 </div>
 

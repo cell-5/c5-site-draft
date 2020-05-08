@@ -1,24 +1,8 @@
 {{ define "main" }}
 
-<div class="bg-black-2">
-    <div class="mw9 center relative z-1 pv4-m ph4">
-        <div class="flex-m flex-row-m flex-wrap-m">
-            <div class="tc tl-m w-60-m relative">
-                <div class="white f1 f-5-m fw9 lh-copy">
-                    {{ .Params.title }}
-                </div>
-            </div>
-            <div class="w-40-m relative">
-                {{ if .Params.imageUrl }}
-                <img src="{{ .Params.imageUrl }}" class="w-80 absolute-m dn db-m" />
-                {{ end }}
-            </div>
-        </div>
-    </div>
-    {{ partial "waves" (dict "svg" "waves-1" "viewbox" "0 0 1920 388") }}
-</div>
+{{ partial "header" (dict "title" .Params.title "imageUrl" .Params.imageUrl "text" .Params.text) }}
 
-<div class="mw9 ph4">
+<div class="mw9 pa4">
     <div class="flex-m flex-row-m flex-wrap-m">
         {{ range $index, $element := .Params.process }}
         <div class="w-50-m pv5 pv0-m ph4">
@@ -27,7 +11,8 @@
         {{ end }}
     </div>
 </div>
-
-{{ partial "svg-waves" . }}
+<div class="mw9 ph4 pv5 tc f6">
+    {{ .Params.footer | markdownify }}
+</div>
 
 {{ end }}

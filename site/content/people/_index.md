@@ -2,6 +2,10 @@
 page: whoweare
 title: Who We Are
 imageUrl: img/SVG/WhoWeAre.svg
+text: >
+  **Open Roles:** We are currently looking for **two web developers**, a **web designer** and a **social media marketing manager** to join our team. [Apply Now](/contact).
+footer: >
+  **Issues with us?** If you have any concerns with any of our team, please let us know in confidence, as we would much rather address it. [Report repuational concern](/contact).
 people:
     - name: Pat Bautista
       title: Software Developer
