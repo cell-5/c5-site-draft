@@ -107,7 +107,7 @@ button {
     padding: 10px 30px;
 }
 
-ol, ul {
+ol, ul, li {
 	list-style: none;
 }
 
