@@ -1,0 +1,50 @@
+{{ $activeIndex := .activeIndex }}
+
+
+<div class="menu">
+    <ul class="menu__tabs">
+        {{ range $index, $element := .Pages.GroupByParam "category" }}
+        <li>
+            <a class="{{ if eq $activeIndex $index}}active{{ end }} f5" href="#category-{{ $index }}">
+                {{ .Key }}
+            </a>
+        </li>
+        {{ end }}
+
+    </ul>
+    <section class="menu__wrapper">
+        {{ range $index, $element := .Pages.GroupByParam "category" }}
+        <div id="category-{{ $index }}" class="{{ if eq $activeIndex $index }}item-active{{ end }} menu__item">
+            <div class="flex flex-wrap flex-row justify-center">
+                {{ range .Pages }}
+                <div class="raise pointer w-auto-m ma2">
+                    <a href="{{.Permalink}}">
+                        <img src="{{ .Params.image }}" class="h3 w3" />
+                    </a>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+    </section>
+    <div class="menu--shadow"></div>
+</div>
+<script>
+    $(function () {
+
+        // Menu Tabular
+        var $menu_tabs = $('.menu__tabs li a');
+        $menu_tabs.on('click', function (e) {
+            e.preventDefault();
+            $menu_tabs.removeClass('active');
+            $(this).addClass('active');
+
+            console.log(this.hash);
+
+            $('.menu__item').fadeOut(300);
+            $(this.hash).delay(300).fadeIn();
+
+        });
+
+    });
+</script>

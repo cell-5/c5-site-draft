@@ -89,6 +89,7 @@
 /*Custom CsS*/
 @import "./imports/carousel";
 @import "./imports/nav";
+@import "./imports/tabular-menu";
 
 * {
     margin: 0;

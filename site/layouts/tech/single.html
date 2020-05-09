@@ -1,21 +1,9 @@
 {{ define "main" }}
+{{ $category := .Params.category }}
 
 {{ with .Site.GetPage "/tech" }}
 <div class="mw9 ph4">
-  {{ range .Pages.GroupByParam "category" }}
-  <div class="pv4 bt b--grey-2 tc">
-    <h3 class="f3 b mb2">{{ .Key }}</h3>
-    <div class="flex flex-wrap flex-row justify-center">
-      {{ range .Pages }}
-      <div class="raise pointer w-auto-m ma2">
-        <a href="{{.Permalink}}">
-          <img src="{{ .Params.image }}" class="h3 w3" />
-        </a>
-      </div>
-      {{ end }}
-    </div>
-  </div>
-  {{ end }}
+  {{ partial "tech-list" (dict "Pages" .Pages "category" $category) }}
 </div>
 {{ end }}
 
