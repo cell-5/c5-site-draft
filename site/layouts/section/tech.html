@@ -2,8 +2,34 @@
 
 {{ partial "header" (dict "title" .Params.title "imageUrl" .Params.imageUrl "text" .Params.text) }}
 <div class="mw9 ph4">
-    {{ partial "tech-list" (dict "Pages" .Pages "activeIndex" 0) }}
-    <div class="bt b--grey-2 pv5 tc f5">
+    <div class="menu mv5">
+        <ul class="menu__tabs">
+            {{ range $index, $element := .Pages.GroupByParam "category" }}
+            <li>
+                <a class="{{ if eq $index 0 }}active{{ end }} f7" href="#category-{{ $index }}">
+                    {{ .Key }}
+                </a>
+            </li>
+            {{ end }}
+
+        </ul>
+        <section class="menu__wrapper">
+            {{ range $index, $element := .Pages.GroupByParam "category" }}
+            <div id="category-{{ $index }}" class="{{ if eq $index 0 }}item-active{{ end }} menu__item">
+                <div class="flex flex-wrap flex-row justify-center">
+                    {{ range .Pages }}
+                    <div class="raise pointer w-auto-m ma2">
+                        <a href="{{.Permalink}}">
+                            <img src="{{ .Params.image }}" class="h3 w3" />
+                        </a>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+            {{ end }}
+        </section>
+    </div>
+    <div class="mb5 tc f5">
         {{ .Params.footer | markdownify }}
     </div>
 </div>

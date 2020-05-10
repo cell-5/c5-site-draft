@@ -4,8 +4,7 @@
 .menu__tabs {
 	list-style: none;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
+	display: flex;
 }
 .menu__tabs li {
     margin-right: 2px;
@@ -45,9 +44,9 @@
 * MENU WRAPPER
 ---------------------------*/
 .menu {
-	margin: auto;
 	width: 100%;
 	position: relative;
+	box-shadow: 3px 3px 8px 0px #000000;
 }
 .menu__wrapper {
 	padding: 2em;
