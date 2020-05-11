@@ -3,7 +3,7 @@
     <ul class="menu__tabs">
         {{ range $index, $element := .Pages.GroupByParam "category" }}
         <li>
-            <a class="{{ if eq $index 0 }}active{{ end }} f7" href="#category-{{ $index }}">
+            <a class="{{ if eq $category .Key }}active{{ end }} f7" href="#category-{{ $index }}">
                 <div class="w-100 tc">
                     {{ .Key }}
                 </div>
