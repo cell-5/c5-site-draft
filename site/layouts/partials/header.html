@@ -1,19 +1,21 @@
-<div class="bg-black-2">
-    <div class="mw9 center relative z-1 pv4-m ph4">
-        <div class="flex-m flex-row-m flex-wrap-m">
-            <div class="w-60-m relative">
+<div class="bg-black-2 vh-90-m relative-m">
+    <div class="mw9 h-100 center">
+        <div class="flex-m flex-row-m flex-wrap-m h-100">
+            <div class="w-50-m pa4">
                 <div class="white tc tl-m f1 fw9 lh-copy">
                     {{ .title }}
                 </div>
             </div>
-            <div class="w-40-m relative">
+            <div class="w-50-m h-inherit ph4">
                 {{ if .imageUrl }}
-                <img src="{{ .imageUrl }}" class="w-80 absolute-m dn db-m" />
+                <img src="{{ .imageUrl }}" class="h-inherit dn db-m relative z-1" />
                 {{ end }}
             </div>
         </div>
     </div>
-    {{ partial "waves" (dict "svg" "waves-1" "viewbox" "0 0 1920 388") }}
+    <svg viewBox="0 0 1920 388" aria-hidden="true" class="absolute-m bottom-0">
+        <use xlink:href="#waves-1"></use>
+    </svg>
 </div>
 <div class="bg-white">
     <div class="mw9 pa4 f5 tc">{{ .text | markdownify }}</div>

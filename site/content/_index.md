@@ -7,7 +7,7 @@ heading: '
 
 ## scale tomorrow'
 image: img/cell5/cell-5-logo-black.svg
-bannerImg: img/banner-2.png
+bannerImg: img/SVG/banner.svg
 moreLink: Get In Touch
 linkUrl: "#"
 text: >

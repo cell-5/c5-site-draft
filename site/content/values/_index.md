@@ -1,6 +1,7 @@
 ---
 page: ourvalues
 title: "Our Values"
+imageUrl: img/SVG/OurValues.svg
 text: >
     Each big decision we make as an organization, is measured against these values, especially to filter [the people](/people) and [the clients](/clients) we work with.
 footer: >
