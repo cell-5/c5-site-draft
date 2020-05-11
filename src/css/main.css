@@ -123,7 +123,7 @@ h2 {
 }
 
 .selected img {
-    box-shadow: 3px 3px 8px 0px #FF39BE; 
+    box-shadow: 3px 3px 8px 0px var(--primary); 
 }
 
 /*-- These are custom CSS for Containers -- */
