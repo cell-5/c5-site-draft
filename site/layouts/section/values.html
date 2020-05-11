@@ -5,11 +5,11 @@
 <div class="mw9 pa4">
     <div class="flex-m flex-row-m flex-wrap-m">
         {{ range $index , $element := .Params.values }}
-        <div class="w-third-m pa3">
-            <div class=" values bg-white pa4 tc h-100">
+        <div class="w-third-m pa2">
+            <div class=" values bg-white pa3 tc h-100">
                 <img src="{{ .imageUrl }}" class="h3" />
-                <h3 class="f4 mb3 fw9 lh-copy ">{{ .heading }}</h3>
-                <div class="f5 lh-title black">{{ .text | markdownify }}</div>
+                <h3 class="f5 mb3 fw9 lh-copy ">{{ .heading }}</h3>
+                <div class="f7 lh-title black">{{ .text | markdownify }}</div>
             </div>
         </div>
         {{ end }}
