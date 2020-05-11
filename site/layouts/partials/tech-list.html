@@ -2,8 +2,8 @@
 <div class="menu mt3">
     <ul class="menu__tabs">
         {{ range $index, $element := .Pages.GroupByParam "category" }}
-        <li>
-            <a class="{{ if eq $category .Key }}active{{ end }} f7" href="#category-{{ $index }}">
+        <li class="{{ if eq $category .Key }}active{{ end }} f7 tc">
+            <a href="#category-{{ $index }}">
                 {{ .Key }}
             </a>
         </li>
@@ -25,5 +25,4 @@
         </div>
         {{ end }}
     </section>
-    <div class="menu--shadow"></div>
 </div>

@@ -2,12 +2,14 @@
 
 {{ partial "header" (dict "title" .Params.title "imageUrl" .Params.imageUrl "text" .Params.text) }}
 <div class="mw9 ph4">
-    <div class="menu mv5">
+    <div class="menu mv5-m">
         <ul class="menu__tabs">
             {{ range $index, $element := .Pages.GroupByParam "category" }}
             <li>
                 <a class="{{ if eq $index 0 }}active{{ end }} f7" href="#category-{{ $index }}">
-                    {{ .Key }}
+                    <div class="w-100 tc">
+                        {{ .Key }}
+                    </div>
                 </a>
             </li>
             {{ end }}
