@@ -1,5 +1,5 @@
 ---
 title: "Mailgun"
-category: "SaaS Integration"
+tag: "SaaS"
 image: img/tools/mailgun.svg
 ---

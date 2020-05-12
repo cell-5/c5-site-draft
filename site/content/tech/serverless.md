@@ -1,5 +1,5 @@
 ---
 title: "Serverless"
-category: "Hosting & Cloud Infrastructure"
+tag: "Cloud"
 image: img/tools/serverless.svg
 ---

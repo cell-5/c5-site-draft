@@ -41,23 +41,48 @@
 		drawer.classList.remove("drawer-open");
 	}
 
-	$(function () {
+	filterSelection("all");
+	function filterSelection(c) {
+		var x, i;
+		x = document.getElementsByClassName("techIcon");
+		if (c == "all") c = "";
+		for (i = 0; i < x.length; i++) {
+			w3RemoveClass(x[i], "db");
+			if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "db");
+		}
+	}
 
-		// Menu Tabular
-		var $menu_tabs = $('.menu__tabs li a');
-		$menu_tabs.on('click', function (e) {
-			e.preventDefault();
-			$menu_tabs.removeClass('active');
-			$(this).addClass('active');
+	function w3AddClass(element, name) {
+		var i, arr1, arr2;
+		arr1 = element.className.split(" ");
+		arr2 = name.split(" ");
+		for (i = 0; i < arr2.length; i++) {
+			if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+		}
+	}
 
-			console.log(this.hash);
+	function w3RemoveClass(element, name) {
+		var i, arr1, arr2;
+		arr1 = element.className.split(" ");
+		arr2 = name.split(" ");
+		for (i = 0; i < arr2.length; i++) {
+			while (arr1.indexOf(arr2[i]) > -1) {
+				arr1.splice(arr1.indexOf(arr2[i]), 1);
+			}
+		}
+		element.className = arr1.join(" ");
+	}
 
-			$('.menu__item').fadeOut(300);
-			$(this.hash).delay(300).fadeIn();
-
+	// Add active class to the current button (highlight it)
+	var btnContainer = document.getElementById("myBtnContainer");
+	var btns = btnContainer.getElementsByClassName("btn-tag");
+	for (var i = 0; i < btns.length; i++) {
+		btns[i].addEventListener("click", function () {
+			var current = document.getElementsByClassName("active");
+			current[0].className = current[0].className.replace(" active", "");
+			this.className += " active";
 		});
-
-	});
+	}
 
 </script>
 {{ end }}

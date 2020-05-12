@@ -1,5 +1,5 @@
 ---
 title: "AWS Lambda"
-category: "Custom API"
+tag: "API"
 image: img/tools/awslambda.svg
 ---

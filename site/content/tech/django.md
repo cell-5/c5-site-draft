@@ -1,5 +1,5 @@
 ---
 title: "Django"
-category: "CRM, CMS & Ecommerce"
+tag: "CRM"
 image: img/tools/django.svg
 ---

@@ -1,5 +1,5 @@
 ---
 title: "ReactJS"
-category: "Web & Mobile"
+tag: "Web"
 image: img/tools/ReactJs.svg
 ---

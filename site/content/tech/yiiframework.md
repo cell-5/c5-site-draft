@@ -1,5 +1,5 @@
 ---
 title: "Yii Framework"
-category: "CRM, CMS & Ecommerce"
+tag: "CRM"
 image: img/tools/yiiframework.svg
 ---

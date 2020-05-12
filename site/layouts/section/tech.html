@@ -1,38 +1,24 @@
 {{ define "main" }}
 
 {{ partial "header" (dict "title" .Params.title "imageUrl" .Params.imageUrl "text" .Params.text) }}
-<div class="mw9 ph4">
-    <div class="menu mv5-m">
-        <ul class="menu__tabs">
-            {{ range $index, $element := .Pages.GroupByParam "category" }}
-            <li>
-                <a class="{{ if eq $index 0 }}active{{ end }} f7" href="#category-{{ $index }}">
-                    <div class="w-100 tc">
-                        {{ .Key }}
-                    </div>
-                </a>
-            </li>
-            {{ end }}
-
-        </ul>
-        <section class="menu__wrapper">
-            {{ range $index, $element := .Pages.GroupByParam "category" }}
-            <div id="category-{{ $index }}" class="{{ if eq $index 0 }}item-active{{ end }} menu__item">
-                <div class="flex flex-wrap flex-row justify-center">
-                    {{ range .Pages }}
-                    <div class="raise pointer w-auto-m ma2">
-                        <a href="{{.Permalink}}">
-                            <img src="{{ .Params.image }}" class="h3 w3" />
-                        </a>
-                    </div>
-                    {{ end }}
-                </div>
-            </div>
-            {{ end }}
-        </section>
+<div class="mw9 ph4 mv3">
+    <div id="myBtnContainer" class="f7 flex justify-between">
+        <button class="btn-tag active" onclick="filterSelection('all')"> All</button>
+        {{ range .Params.categories }}
+        <button class="btn-tag" onclick="filterSelection('{{ .tag }}')"> {{ .heading }}</button>
+        {{ end }}
     </div>
-    <div class="mb5 tc f5">
-        {{ .Params.footer | markdownify }}
+    <div class="flex flex-wrap flex-row justify-center">
+        {{ range .Pages }}
+        <div class="techIcon dn raise pointer ma2 {{ .Params.tag }}">
+            <a href="{{.Permalink}}">
+                <img src="{{ .Params.image }}" class="h-auto w3 img-responsive" />
+            </a>
+        </div>
+        {{ end }}
     </div>
+</div>
+<div class="mw9 ph4 mv5 tc f5">
+    {{ .Params.footer | markdownify }}
 </div>
 {{ end }}

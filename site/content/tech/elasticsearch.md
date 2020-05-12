@@ -1,5 +1,5 @@
 ---
 title: "Elasticsearch"
-category: "Persistence & Middleware"
+tag: "Persistence"
 image: img/tools/elasticsearch.svg
 ---

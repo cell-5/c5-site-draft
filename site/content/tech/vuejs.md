@@ -1,5 +1,5 @@
 ---
 title: "VueJS"
-category: "Web & Mobile"
+tag: "Web"
 image: img/tools/VueJs.svg
 ---

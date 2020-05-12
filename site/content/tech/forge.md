@@ -1,5 +1,5 @@
 ---
 title: "Forge"
-category: "Hosting & Cloud Infrastructure"
+tag: "Cloud"
 image: img/tools/forge.svg
 ---

@@ -1,5 +1,5 @@
 ---
 title: "Laravel"
-category: "Custom API"
+tag: "API"
 image: img/tools/laravel.svg
 ---

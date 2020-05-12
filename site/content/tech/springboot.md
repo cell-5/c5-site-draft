@@ -1,5 +1,5 @@
 ---
 title: "Springboot"
-category: "Custom API"
+tag: "API"
 image: img/tools/springboot.svg
 ---

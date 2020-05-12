@@ -1,5 +1,5 @@
 ---
 title: "Woo Commerce"
-category: "CRM, CMS & Ecommerce"
+tag: "CRM"
 image: img/tools/woocommerce.svg
 ---

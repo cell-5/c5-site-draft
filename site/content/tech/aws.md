@@ -1,5 +1,5 @@
 ---
 title: "AWS"
-category: "Hosting & Cloud Infrastructure"
+tag: "Cloud"
 image: img/tools/aws.svg
 ---

@@ -1,5 +1,5 @@
 ---
 title: "PHP"
-category: "Custom API"
+tag: "API"
 image: img/tools/php.svg
 ---

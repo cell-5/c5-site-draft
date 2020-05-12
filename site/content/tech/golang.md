@@ -1,5 +1,5 @@
 ---
 title: "Golang"
-category: "Custom API"
+tag: "API"
 image: img/tools/golang.svg
 ---

@@ -1,5 +1,5 @@
 ---
 title: "Shopify"
-category: "CRM, CMS & Ecommerce"
+tag: "CRM"
 image: img/tools/shopify.svg
 ---

@@ -1,5 +1,5 @@
 ---
 title: "MySQL"
-category: "Persistence & Middleware"
+tag: "Persistence"
 image: img/tools/mysql.svg
 ---

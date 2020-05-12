@@ -1,5 +1,5 @@
 ---
 title: "Paypal"
-category: "SaaS Integration"
+tag: "SaaS"
 image: img/tools/paypal.svg
 ---

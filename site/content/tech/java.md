@@ -1,6 +1,6 @@
 ---
 title: "JAVA"
-category: "Custom API"
+tag: "API"
 image: img/tools/java.svg
 ---
 

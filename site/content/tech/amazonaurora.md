@@ -1,5 +1,5 @@
 ---
 title: "Amazon Aurora"
-category: "Persistence & Middleware"
+tag: "Persistence"
 image: img/tools/amazon aurora.svg
 ---

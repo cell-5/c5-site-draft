@@ -1,5 +1,5 @@
 ---
 title: "Netlify"
-category: "Hosting & Cloud Infrastructure"
+tag: "Cloud"
 image: img/tools/netlify.svg
 ---

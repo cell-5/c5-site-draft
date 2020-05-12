@@ -1,5 +1,5 @@
 ---
 title: "Elm"
-category: "Web & Mobile"
+tag: "Web"
 image: img/tools/elm.svg
 ---

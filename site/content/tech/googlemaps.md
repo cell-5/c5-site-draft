@@ -1,5 +1,5 @@
 ---
 title: "Google Maps"
-category: "SaaS Integration"
+tag: "SaaS"
 image: img/tools/googlemaps.svg
 ---

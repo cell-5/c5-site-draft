@@ -1,5 +1,5 @@
 ---
 title: "Joomla"
-category: "CRM, CMS & Ecommerce"
+tag: "CRM"
 image: img/tools/joomla.svg
 ---

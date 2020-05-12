@@ -1,5 +1,5 @@
 ---
 title: "Kubernetes"
-category: "Hosting & Cloud Infrastructure"
+tag: "Cloud"
 image: img/tools/kubernetes.svg
 ---

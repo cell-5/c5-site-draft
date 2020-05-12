@@ -1,5 +1,5 @@
 ---
 title: "Flutter"
-category: "Web & Mobile"
+tag: "Web"
 image: img/tools/Flutter.svg
 ---

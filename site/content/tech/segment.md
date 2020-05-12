@@ -1,5 +1,5 @@
 ---
 title: "Segment"
-category: "SaaS Integration"
+tag: "SaaS"
 image: img/tools/segment.svg
 ---

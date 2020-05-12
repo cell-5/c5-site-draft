@@ -1,5 +1,5 @@
 ---
 title: "Auth0"
-category: "SaaS Integration"
+tag: "SaaS"
 image: img/tools/auth0.svg
 ---

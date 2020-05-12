@@ -1,5 +1,5 @@
 ---
 title: "Wordpress"
-category: "CRM, CMS & Ecommerce"
+tag: "CRM"
 image: img/tools/wordpress.svg
 ---

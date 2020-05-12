@@ -1,5 +1,5 @@
 ---
 title: "Python"
-category: "Custom API"
+tag: "API"
 image: img/tools/python.svg
 ---

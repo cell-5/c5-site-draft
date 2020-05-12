@@ -1,5 +1,5 @@
 ---
 title: "DigitalOcean"
-category: "Hosting & Cloud Infrastructure"
+tag: "Cloud"
 image: img/tools/digitalocean.svg
 ---

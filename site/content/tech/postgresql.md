@@ -1,5 +1,5 @@
 ---
 title: "PostgreSQL"
-category: "Persistence & Middleware"
+tag: "Persistence"
 image: img/tools/postgresql.svg
 ---

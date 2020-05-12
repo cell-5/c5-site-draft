@@ -1,5 +1,5 @@
 ---
 title: "Envoyer"
-category: "Hosting & Cloud Infrastructure"
+tag: "Cloud"
 image: img/tools/envoyer_1.svg
 ---

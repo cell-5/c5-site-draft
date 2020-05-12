@@ -1,5 +1,5 @@
 ---
 title: "Redis"
-category: "Persistence & Middleware"
+tag: "Persistence"
 image: img/tools/redis.svg
 ---

@@ -1,5 +1,5 @@
 ---
 title: "Google Cloud"
-category: "Hosting & Cloud Infrastructure"
+tag: "Cloud"
 image: img/tools/googlecloud-gcp.svg
 ---

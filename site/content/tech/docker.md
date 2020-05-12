@@ -1,5 +1,5 @@
 ---
 title: "Docker"
-category: "Hosting & Cloud Infrastructure"
+tag: "Cloud"
 image: img/tools/docker.svg
 ---

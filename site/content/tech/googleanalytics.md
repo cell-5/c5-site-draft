@@ -1,5 +1,5 @@
 ---
 title: "Google Analytics"
-category: "SaaS Integration"
+tag: "SaaS"
 image: img/tools/googleanalytics.svg
 ---

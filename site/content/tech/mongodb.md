@@ -1,5 +1,5 @@
 ---
 title: "MongoDB"
-category: "Persistence & Middleware"
+tag: "Persistence"
 image: img/tools/mongodb.svg
 ---
