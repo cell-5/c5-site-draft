@@ -119,6 +119,23 @@
   content: url("/img/icons/icon-menu.svg");
 }
 
+#breadcrumbs li {
+    display: inline;
+    font-size: 18px;
+    line-height: 35px;
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+#breadcrumbs li:first-of-type {
+    margin-left: 20px;
+}
+
+#breadcrumbs li:not(:first-of-type)::before {
+    content: '>';
+    padding-right: 10px;
+}
+
 
 
 @media only screen and (max-width: 799px) {

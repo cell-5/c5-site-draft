@@ -1,25 +1,23 @@
 {{ define "main" }}
-{{ $category := .Params.category }}
-
-<div class="mw9 center ph3 pv4">
-  <div class="flex-m flex-row-m flex-wrap-m min-vh-80">
-    <div class="flex-none ph2-m w-60-m mb6 mb0-m">
-      {{ with .Site.GetPage "/tech" }}
-      {{ partial "tech-list" (dict "Pages" .Pages "category" $category) }}
-      {{ end }}
-    </div>
-    <div class="flex-none w-40-m ph2-m mb6 mb0-m">
-      <div class="h-100 bl-m b--grey-1 pl2-m">
-        <div class="tc">
-          {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" class="h3 w3 mb2" />{{ end }}
-          <h3 class="f3 lh-title b">{{.Title}}</h3>
-        </div>
-        <div class="cms mw6 ph3">
-          <p>{{ .Description }}</p>
-          {{ .Content }}
-        </div>
+<div class="bg-black-2">
+  <div class="mw9 center">
+    <ul id="breadcrumbs">
+      <li><a href="/tech">Tech</a></li>
+      <li>{{ .Title }}</li>
+    </ul>
+    <div class="flex-m flex-row-m flex-wrap-m justify-center pt3">
+      <img src="{{ .Params.image }}" class="h3 dn db-m relative z-1" />
+      <div class="white tc tl-m f1 fw9 lh-copy">
+        {{.Title}}
       </div>
     </div>
   </div>
+  <svg viewBox="0 0 1920 388" aria-hidden="true">
+    <use xlink:href="#waves-1"></use>
+  </svg>
+</div>
+<div class="cms mw6 center ph3">
+  <p>{{ .Description }}</p>
+  {{ .Content }}
 </div>
 {{ end }}

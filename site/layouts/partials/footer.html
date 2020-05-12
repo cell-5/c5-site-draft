@@ -29,6 +29,7 @@
 </footer>
 <script src="/app.js"></script>
 <script>
+	/* For Nav*/
 	var navList = document.getElementById("nav-lists");
 	var drawer = document.getElementById("drawer-nav");
 	function Show() {
@@ -41,6 +42,26 @@
 		drawer.classList.remove("drawer-open");
 	}
 
+	/*For People*/
+	function ShowPeopleData(element, index) {
+		let jsonData = JSON.parse(element);
+
+		document.getElementById("name-data").innerHTML = jsonData.name;
+		document.getElementById("title-data").innerHTML = jsonData.title;
+		document.getElementById("bio-data").innerHTML = jsonData.bio;
+
+		var items = document.getElementById("people-gallery").getElementsByTagName("div");
+		for (let i = 0; i < items.length; i++) {
+			let itemData = document.getElementById("people-" + i);
+			if (i != Number(index)) {
+				itemData.classList.remove("selected");
+			} else {
+				itemData.classList.add("selected");
+			}
+		}
+	}
+
+	/*For Tech*/
 	filterSelection("all");
 	function filterSelection(c) {
 		var x, i;
