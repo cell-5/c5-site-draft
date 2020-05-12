@@ -170,8 +170,8 @@
     position: relative;
     color: #fff;
     text-decoration: none;
-    background-color: #AA6BF1;
-    border: 1px solid #AA6BF1;
+    background-color: #343a40;
+    border: 1px solid #343a40;
 }
 
 .breadcrumb-arrow li:first-child a {
@@ -192,7 +192,7 @@
 .breadcrumb-arrow li a:before {
     right: -10px;
     z-index: 3;
-    border-left-color: #AA6BF1;
+    border-left-color: #343a40;
     border-left-style: solid;
     border-left-width: 10px;
 }
