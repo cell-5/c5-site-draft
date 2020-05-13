@@ -144,7 +144,7 @@
     }
     
     &.current {
-      color: #9E22E9;
+      color: var(--primary);
     }
   }
 

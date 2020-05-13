@@ -88,8 +88,8 @@
 
 /*Custom CsS*/
 @import "./imports/carousel";
+@import "./imports/custom";
 @import "./imports/nav";
-@import "./imports/tabular-menu";
 
 * {
     margin: 0;

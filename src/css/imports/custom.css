@@ -1,0 +1,53 @@
+/* Style the buttons */
+.btn-tag {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn-tag:hover {
+  background-color: #ddd;
+}
+
+.btn-tag.active {
+  background-color: #666;
+  color: white;
+}
+
+/*tech logo*/
+.circle-container {
+    position: relative;
+    perspective: 1000;  
+    margin: 0 auto; 
+}      
+      
+.circle-container, .front {
+    width: 8rem;
+    height: 8rem;
+    background-color: rgba(0,0,0,0);
+}
+              
+.circle {
+    position: relative;
+    width: 8rem;
+    height: 8rem;
+}
+        
+.front {
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 2;
+}
+        
+.back-logo {
+    width: 60%;
+    display: block;
+    margin: 1.6rem auto;
+}
