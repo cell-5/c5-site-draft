@@ -1,11 +1,11 @@
 {{ define "main" }}
 
 {{ partial "header" (dict "title" .Params.title "imageUrl" .Params.imageUrl "text" .Params.text) }}
-<div class="mw9 ph4 mv3">
-    <div id="myBtnContainer" class="f7 flex justify-between">
-        <button class="btn-tag active" onclick="filterSelection('all')"> All</button>
+<div class="mw9 center ph4 mv3">
+    <div id="myBtnContainer" class="f7 flex flex-wrap justify-center justify-between-m flex-row-m">
+        <button class="btn-tag ma1 active" onclick="filterSelection('all')"> All</button>
         {{ range .Params.categories }}
-        <button class="btn-tag" onclick="filterSelection('{{ .tag }}')"> {{ .heading }}</button>
+        <button class="btn-tag ma1" onclick="filterSelection('{{ .tag }}')"> {{ .heading }}</button>
         {{ end }}
     </div>
     <div class="flex flex-wrap flex-row justify-center">
@@ -18,7 +18,7 @@
         {{ end }}
     </div>
 </div>
-<div class="mw9 ph4 mv5 tc f5">
+<div class="mw9 center ph4 mv5 tc f5">
     {{ .Params.footer | markdownify }}
 </div>
 {{ end }}
