@@ -1,14 +1,14 @@
 {{ define "main" }}
 <div class="bg-black-2">
   <div class="mw9 center">
-    <div class="flex-m flex-row-m flex-wrap-m pa2">
-      <ol class="breadcrumb breadcrumb-arrow">
-        <li class=""><a href="/tech">Product</a></li>
-        <li class="active"><span>{{ .Title }}</span></li>
-      </ol>
-
+    <div class="breadcrumbs">
+      <a href="/tech" class="history">Tech <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true"
+          role="presentation">
+          <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+          <path fill="none" d="M0 0h24v24H0z"></path>
+        </svg></a>
+      <a class="current">{{ .Title }}</a>
     </div>
-
     <div class="flex-m flex-row-m flex-wrap-m justify-center pt3">
       <img src="{{ .Params.image }}" class="h3 dn db-m relative z-1" />
       <div class="white tc tl-m f1 fw9 lh-copy">
