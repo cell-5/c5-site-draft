@@ -2,7 +2,7 @@
 
 {{ partial "header" (dict "title" .Params.title "imageUrl" .Params.imageUrl "text" .Params.text) }}
 
-<div class="mw9 pa4">
+<div class="mw9 center pa4">
     <div class="flex-m flex-row-m flex-wrap-m">
         {{ range $index, $element := .Params.process }}
         <div class="w-50-m pv5 pv0-m ph4">
@@ -11,7 +11,7 @@
         {{ end }}
     </div>
 </div>
-<div class="mw9 ph4 pv5 tc f5">
+<div class="mw9 center ph4 pv5 tc f5">
     {{ .Params.footer | markdownify }}
 </div>
 
