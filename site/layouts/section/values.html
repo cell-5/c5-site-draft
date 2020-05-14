@@ -6,10 +6,10 @@
     <div class="flex-m flex-row-m flex-wrap-m">
         {{ range $index , $element := .Params.values }}
         <div class="w-third-m pa2">
-            <div class=" values bg-white pa3 tc h-100">
+            <div class="br1 shadow bg-white pa3 tc h-100">
                 <img src="{{ .imageUrl }}" class="h3" />
-                <h3 class="f5 mb3 fw9 lh-copy ">{{ .heading }}</h3>
-                <div class="f7 lh-title black">{{ .text | markdownify }}</div>
+                <h3 class="f5 mb3 fw9 lh-copy dark-blue">{{ .heading }}</h3>
+                <div class="f7 lh-title">{{ .text | markdownify }}</div>
             </div>
         </div>
         {{ end }}

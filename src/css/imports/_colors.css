@@ -8,6 +8,10 @@
   color: var(--purple);
 }
 
+.dark-blue {
+  color: var(--dark-blue);
+}
+
 .cyan {
   color: var(--cyan);
 }

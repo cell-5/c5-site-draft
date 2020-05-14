@@ -1,12 +1,12 @@
 <div class="bg-black-2 relative-m">
     <div class="mw9 h-100 center">
-        <div class="flex-m flex-row-m flex-wrap-m ph4 pt4">
+        <div class="flex-m flex-row-m flex-wrap-m ph4 pt4 items-center">
             <div class="w-50-m">
-                <div class="white tc tl-m f1 fw9 lh-copy">
+                <div class="white tc tl-m f-4 fw9 lh-copy">
                     {{ .title }}
                 </div>
             </div>
-            <div class="w-50-m h-inherit">
+            <div class="w-50-m">
                 {{ if .imageUrl }}
                 <img src="{{ .imageUrl }}" class="h5 dn db-m relative z-1 center" />
                 {{ end }}

@@ -85,7 +85,6 @@
 /* Uncomment out the line below to help debug layout issues */
 /*@import './imports/_debug';*/
 
-
 /*Custom CsS*/
 @import "./imports/carousel";
 @import "./imports/custom";
@@ -142,21 +141,9 @@ h2 {
     margin: 0;
 }
 
-/*Our Work Page*/
-.clients {
-    background: rgba(225, 225, 225, 0.3);
-}
-
 /*How We Work Page*/
 .process {
     font-family: Cabin Sketch;
-}
-
-/*Our Values Page*/
-.values {
-    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
-    border-radius: 50px;
-    color: #4B4AA1;
 }
 
 .shadow {

@@ -4,7 +4,7 @@
 	--purple: #AA6BF1;
 	--light-purple: #9E22E9;
 	--cyan: #46D9FC;
-	--dark-blue: #21214A;
+	--dark-blue: #4B4AA1;
 	--highlight: rgba(254, 213, 198, 1);
 	--white: rgba(255, 255, 255, 1);
 	--off-white: rgba(255, 253, 252, 1);
@@ -38,6 +38,6 @@
 	--spacing-extra-extra-extra-large: 16rem;
 
 	/* Miscelaneous */
-	--border-radius: .25rem;
+	--border-radius: .5rem;
 	--hover-transition: all 150ms ease;
 }
