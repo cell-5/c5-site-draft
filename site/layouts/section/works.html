@@ -4,14 +4,17 @@
 
 <div class="mw9 pv5 ph4">
     <div class="flex-m flex-row-m flex-wrap-m">
-        {{ range $index, $element := .Params.clients }}
+        {{ range .Pages }}
         <div class="flex-none w-third-m pa2">
-            <div class="shadow raise">
-                <img src="{{ .imageUrl }}" class="br0 ba b--grey-2" />
-                <div class="bg-white tc pa2">
-                    <h3 class="f5 fw9 lh-title">
-                        {{ .heading }}
+            <div class="h-100 shadow raise" onclick="window.location.href = '{{.Permalink}}'">
+                <img src="{{ .Params.image }}" class="br0 ba b--grey-2" />
+                <div class="bg-white tc pv2 ph3">
+                    <h3 class="f5 fw9 lh-title mb2">
+                        {{ .Title }}
                     </h3>
+                    <div class="f7 no-underline">
+                        {{ .Description }}
+                    </div>
                 </div>
             </div>
         </div>
