@@ -18,7 +18,7 @@
         {{ end }}
     </div>
 </div>
-<div class="mw9 center ph4 mv5 tc f5">
-    {{ .Params.footer | markdownify }}
-</div>
+
+{{ partial "wide-text" (dict "text" .Params.footer)}}
+
 {{ end }}

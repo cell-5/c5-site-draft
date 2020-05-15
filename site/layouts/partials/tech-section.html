@@ -18,7 +18,7 @@
     </div>
     {{ end }}
     {{ end }}
-    <div class="f3-m mt3 tc">
-        {{ partial "wide-text" (dict "text" .text) }}
+    <div class="f3-m mt3 tc w-70 center">
+        {{.text | markdownify }}
     </div>
 </div>

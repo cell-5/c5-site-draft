@@ -2,12 +2,33 @@
 
 {{ partial "header" (dict "title" .Params.title "imageUrl" .Params.imageUrl "text" .Params.text) }}
 
+<div class="mw9 center pa4 vh-90">
+    <div class="flex-m flex-row-m flex-wrap-m w-100">
+        <div class="w-50-m mb5 mb0-m ">
+            <div id="people-gallery" class="flex flex-wrap flex-row self-start">
+                {{ range $index, $element := .Params.people }}
+                <div id="people-{{ $index }}"
+                    class="{{ if eq $index 0 }}selected{{ end }} raise pointer h3 w3 h-auto-m w-auto-m ma2"
+                    onclick='ShowPeopleData("{{ $element | jsonify }}", "{{ $index }}")'>
+                    <img src="{{ .imageUrl }}" />
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        <div class="w-50-m ph4-m">
+            {{ range $index, $element := .Params.people }}
+            {{ if eq $index 0}}
+            <div id="people-data" class="tl">
+                <h1 id="name-data" class="f2 fw9 lh-solid">{{ .name }}</h1>
+                <h3 id="title-data" class="f4 b">{{ .title }}</h3>
+                <p id="bio-data" class="f5 b pv3">{{ .bio }}</p>
+            </div>
+            {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</div>
 
-<div class="bg-white">
-    {{ partial "people-widget" (dict "people" .Params.people )}}
-</div>
-<div class="mw9 ph4 pv5 tc f5">
-    {{ .Params.footer | markdownify }}
-</div>
+{{ partial "wide-text" (dict "text" .Params.footer)}}
 
 {{ end }}

@@ -21,9 +21,8 @@
         {{ end }}
     </div>
 </div>
-<div class="mw9 pa4 tc f5">
-    {{ .Params.footer | markdownify }}
-</div>
+
+{{ partial "wide-text" (dict "text" .Params.footer)}}
 
 {{ partial "svg-waves" . }}
 
