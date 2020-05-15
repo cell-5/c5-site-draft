@@ -1,21 +1,8 @@
 {{ define "main" }}
-<div class="bg-black-2">
-  <div class="mw9 center">
-    <div class="breadcrumbs pa2">
-      <a href="/tech" class="history">
-        Tech
-        <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true" role="presentation">
-          <use xlink:href="#chevron-right"></use>
-        </svg></a>
-      <a class="current">{{ .Title }}</a>
-    </div>
 
-  </div>
-  <svg viewBox="0 0 1920 388" aria-hidden="true">
-    <use xlink:href="#waves-1"></use>
-  </svg>
-</div>
-<div class="mw6 center ph3 pv4">
+{{ partial "breadcrumbs" (dict "link" "Tech" "linkUrl" "/tech" "title" .Title ) }}
+
+<div class="mw6 center ph2">
   <h3 class="f2 lh-title b mb3">{{.Title}}</h3>
   <div class="cms mw6">
     <p>{{ .Description }}</p>
