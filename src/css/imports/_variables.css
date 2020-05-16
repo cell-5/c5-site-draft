@@ -13,7 +13,8 @@
 	--grey-3: rgba(89, 87, 86, 1);
 	--grey-4: rgba(66, 64, 64, 1);
     --black-1: #000000;
-    --black-2: #25272E;
+	--black-2: #25272E;
+	--black-3: #1A1B20;
 	--gradient-1: linear-gradient(133.09deg, #D623E9 -64.47%, #7021E9 98.59%);
 
 	/* Typography */

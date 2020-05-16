@@ -5,11 +5,11 @@
     <div class="flex-m flex-row-m flex-wrap-m">
         {{ end }}
         <div class="w-third-m pa2">
-            <div class="pa3 br1 bg-white h-100 tl">
-                <span class="black underline f5-m b">{{ .group }}</span>
-                <div class="flex flex-wrap flex-row justify-center">
+            <div class="pa3 br1 bg-black-3 h-100 tc">
+                <span class="white underline f5-m b">{{ .group }}</span>
+                <div class="flex flex-wrap flex-row justify-center tech pa2">
                     {{ range $index, $element := .tech }}
-                    <img src="{{ .imageUrl }}" class="h1 w1 ma1 h2-m w2-m ma2-m" />
+                    <img src="{{ .imageUrl }}" class="ma1" />
                     {{ end }}
                 </div>
             </div>

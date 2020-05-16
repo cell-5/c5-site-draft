@@ -101,6 +101,10 @@
   background-color: var(--black-2);
 }
 
+.bg-black-3 {
+  background-color: var(--black-3);
+}
+
 .bg-gradient-1 {
     background: var(--gradient-1);
 }
