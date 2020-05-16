@@ -1,6 +1,15 @@
 <div class="mw9 center relative ph5">
     {{ partial "title" (dict "heading" .heading) }}
-    {{ range $index, $element := .lists }}
+    <div class="flex flex-wrap flex-row justify-center">
+        {{ range .Pages }}
+        <div class="techIcon dn raise pointer ma2 {{ .Params.tag }}">
+            <a href="{{.Permalink}}">
+                <img src="{{ .Params.image }}" class="h-auto w3 img-responsive" />
+            </a>
+        </div>
+        {{ end }}
+    </div>
+    <!-- {{ range $index, $element := .lists }}
     {{ if modBool $index 3 }}
     <div class="flex-m flex-row-m flex-wrap-m">
         {{ end }}
@@ -17,7 +26,7 @@
         {{ if modBool (add $index 1) 3 }}
     </div>
     {{ end }}
-    {{ end }}
+    {{ end }} -->
     <div class="f3-m mt3 tc w-70 center">
         {{.text | markdownify }}
     </div>
