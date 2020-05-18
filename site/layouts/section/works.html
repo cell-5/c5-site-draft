@@ -6,7 +6,7 @@
     <div class="flex-m flex-row-m flex-wrap-m">
         {{ range .Pages }}
         <div class="flex-none w-third-m pa2">
-            <div class="h-100 shadow raise" onclick="window.location.href = '{{.Permalink}}'">
+            <div class="h-100 shadow raise pointer" onclick="window.location.href = '{{.Permalink}}'">
                 <img src="{{ .Params.image }}" class="br0 ba b--grey-2" />
                 <div class="bg-white tc pv2 ph3">
                     <h3 class="f5 fw9 lh-title mb2">
