@@ -1,5 +1,6 @@
 ---
 title: "Tendrr"
+category: portfolio
 image: /img/clients/tendrr-screenshot-2.jpg
 moreLink: https://tendrr.co/
 description: >

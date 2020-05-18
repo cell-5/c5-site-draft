@@ -1,5 +1,6 @@
 ---
 title: "White Spider Media"
+category: portfolio
 image: /img/clients/wsm.gif
 moreLink: https://www.whitespidermedia.com/
 description: >

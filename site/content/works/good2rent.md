@@ -1,5 +1,6 @@
 ---
 title: "good2rent"
+category: portfolio
 image: /img/clients/good2rent-screenshot-2.jpg
 moreLink: https://www.good2rent.co.uk/
 description: >

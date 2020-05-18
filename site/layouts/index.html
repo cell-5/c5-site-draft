@@ -4,7 +4,10 @@
 
 <div class="bg-black-2">
     <div class="pv5 tc">
-        {{ partial "blog-table" .Params.OurWork }}
+        {{ $workparams := .Params.OurWork}}
+        {{ with .Site.GetPage "/works" }}
+        {{ partial "blog-table" (dict "Params" $workparams "Pages" .Pages) }}
+        {{ end }}
     </div>
     {{ partial "waves" (dict "svg" "waves-1" "viewbox" "0 0 1920 388") }}
 </div>

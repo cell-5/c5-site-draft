@@ -1,5 +1,6 @@
 ---
 title: "Aphex"
+category: portfolio
 image: /img/clients/aphex-screenshot.jpg
 moreLink: https://www.aphex.co/
 description: >

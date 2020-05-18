@@ -1,5 +1,6 @@
 ---
 title: "Melissa Twigg"
+category: portfolio
 image: /img/clients/mtwigg-screenshot-2.jpg
 moreLink: http://melissatwigg.co.uk/#/portfolio
 description: >

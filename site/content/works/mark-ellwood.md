@@ -1,5 +1,6 @@
 ---
 title: "Mark Ellwood"
+category: portfolio
 image: /img/clients/mark-ellwood.gif
 moreLink: https://www.mark-ellwood.com/
 description: >

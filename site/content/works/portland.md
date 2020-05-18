@@ -1,5 +1,6 @@
 ---
 title: "Portland Decorating"
+category: portfolio
 image: /img/clients/portland-screenshot.jpg
 moreLink: http://portlanddecorating.co.uk/
 description: >

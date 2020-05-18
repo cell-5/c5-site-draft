@@ -1,5 +1,6 @@
 ---
 title: "myVal"
+category: portfolio
 image: /img/clients/myval-screenshot-2.jpg
 moreLink: https://myval.co.uk/
 description: >

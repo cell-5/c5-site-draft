@@ -1,5 +1,6 @@
 ---
 title: "Carmella Terrana Agency"
+category: portfolio
 image: /img/clients/cta-screenshot.jpg
 moreLink: http://www.ctagencyltd.co.uk/
 description: >
