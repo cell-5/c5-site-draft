@@ -2,6 +2,9 @@
 
 {{ partial "breadcrumbs" (dict "link" "Tech" "linkUrl" "/tech" "title" .Title ) }}
 
+{{ $tag := .Params.tag}}
+{{ $title := .Title }}
+
 <div class="mw6 center ph2">
   <h3 class="f2 lh-title b mb3">{{.Title}}</h3>
   <div class="cms mw6">
@@ -9,5 +12,8 @@
     {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
     {{ .Content }}
   </div>
+  {{ with .Site.GetPage "/tech" }}
+  {{ partial "related" (dict "heading" "Related Technologies" "title" $title "tag" $tag "Pages" .Pages )}}
+  {{ end }}
 </div>
 {{ end }}

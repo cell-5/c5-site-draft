@@ -1,0 +1,16 @@
+{{ $current := .title }}
+<div class="mt4 bt b--grey-2"></div>
+<div class="mt2">
+    <h3 class="fw9">{{ .heading }}</h3>
+    <div class="flex flex-wrap flex-row justify-center">
+        {{ range where .Pages ".Params.tag" "==" .tag }}
+        {{ if ne .Title $current }}
+        <div class="techIcon raise pointer ma2">
+            <a href="{{.Permalink}}">
+                <img src="{{ .Params.image }}" class="h-auto w2 img-responsive" />
+            </a>
+        </div>
+        {{ end }}
+        {{ end }}
+    </div>
+</div>
