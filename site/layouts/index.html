@@ -19,10 +19,9 @@
 </div>
 <div class="bg-black-2">
     <div class="pv5 white tc">
-        {{ $heading := .Params.TechWeKnow.heading}}
-        {{ $text := .Params.TechWeKnow.text}}
+        {{ $params := .Params.TechWeKnow}}
         {{ with .Site.GetPage "/tech" }}
-        {{ partial "tech-section" (dict "heading" $heading "text" $text "Pages" .Pages) }}
+        {{ partial "tech-section" (dict "Params" $params "Pages" .Pages) }}
         {{ end }}
     </div>
     {{ partial "waves" (dict "svg" "waves-3" "viewbox" "0 0 1920 397") }}
