@@ -2,7 +2,11 @@
 
 {{ partial "header" (dict "title" .Params.title "imageUrl" .Params.imageUrl "text" .Params.text) }}
 
-<div class="mw9 pv5 ph4">
+<div class="mw9 pa4">
+    {{ range .Pages.GroupByParam "category" }}
+    <div class="pa2 bt bb b--grey-1 tc mv4">
+        <h3 class="f3 fw9 ttc">{{ .Key }}</h3>
+    </div>
     <div class="flex-m flex-row-m flex-wrap-m">
         {{ range .Pages }}
         <div class="flex-none w-third-m pa2">
@@ -20,6 +24,7 @@
         </div>
         {{ end }}
     </div>
+    {{ end }}
 </div>
 
 {{ partial "wide-text" (dict "text" .Params.footer)}}
