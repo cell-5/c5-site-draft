@@ -1,19 +1,37 @@
+{{ $array := first 4 (where .Pages ".Params.category" "==" "blogs").ByDate.Reverse }}
 <div class="mw7 center f4-m white">
     <div class="fw9 mb3">{{ .Params.heading }}</div>
-    {{ range first 4 (where .Pages ".Params.category" "==" "blog").ByDate.Reverse }}
-    <h3 class="f3 mb2">{{ .Title }}</h3>
-    <p>
-        {{ .Description }}
-    <div class="raise pointer mh1">
-        <a href="{{.Permalink}}">
-            <img src="/img/SVG/arrow-right.svg" class="w1" />
-        </a>
+    {{ range $index, $element := $array }}
+    {{ if modBool $index 2 }}
+    <div class="flex-m flex-row-m flex-wrap-m fw9 lh-copy ">
+        <div class="bt br-m b--grey-1 w-50-m pa3 w-80 center">
+            <h3 class="{{ if modBool $index 4 }}purple{{else}}cyan{{end}} f3 mb2">{{ .Title }}</h3>
+            <p>
+                {{ .Description }}
+                <span class="raise pointer mh1">
+                    <a href="{{.Permalink}}">
+                        <img src="/img/SVG/arrow-right.svg" class="w1" />
+                    </a>
+                </span>
+            </p>
+        </div>
+        {{ else }}
+        <div class="bt b--grey-1 w-50-m pa3 w-80 center">
+            <h3 class="{{ if modBool (sub $index 1) 4 }}purple{{else}}cyan{{end}} f3 mb2">{{ .Title }}</h3>
+            <p>
+                {{ .Description }}
+                <span class="raise pointer mh1">
+                    <a href="{{.Permalink}}">
+                        <img src="/img/SVG/arrow-right.svg" class="w1" />
+                    </a>
+                </span>
+            </p>
+        </div>
     </div>
-    </p>
+    {{ end }}
     {{ end }}
 
-
-    {{ if .moreLink  }}
+    {{ if .Params.moreLink  }}
     <div class="mt5">
         {{ partial "cta" (dict "moreLink" .Params.moreLink "linkUrl" .Params.linkUrl)}}
     </div>
